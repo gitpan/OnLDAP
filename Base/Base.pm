@@ -263,8 +263,6 @@ sub DESTROY {
 }
 
 *_unbind = *OnLDAP::Basec::Client__unbind;
-*_unbind_s = *OnLDAP::Basec::Client__unbind_s;
-*_unbind_ext = *OnLDAP::Basec::Client__unbind_ext;
 *_get_option__bool = *OnLDAP::Basec::Client__get_option__bool;
 *_get_option__int = *OnLDAP::Basec::Client__get_option__int;
 *_get_option__string = *OnLDAP::Basec::Client__get_option__string;
@@ -281,13 +279,34 @@ sub DESTROY {
 *first_reference = *OnLDAP::Basec::Client_first_reference;
 *next_reference = *OnLDAP::Basec::Client_next_reference;
 *count_references = *OnLDAP::Basec::Client_count_references;
+*ldap_parse_reference = *OnLDAP::Basec::Client_ldap_parse_reference;
 *first_entry = *OnLDAP::Basec::Client_first_entry;
 *next_entry = *OnLDAP::Basec::Client_next_entry;
 *count_entries = *OnLDAP::Basec::Client_count_entries;
+*get_entry_controls = *OnLDAP::Basec::Client_get_entry_controls;
 *result = *OnLDAP::Basec::Client_result;
-*search_ext = *OnLDAP::Basec::Client_search_ext;
-*search_ext_s = *OnLDAP::Basec::Client_search_ext_s;
+*search = *OnLDAP::Basec::Client_search;
+*search_s = *OnLDAP::Basec::Client_search_s;
 *parse_result = *OnLDAP::Basec::Client_parse_result;
+*extended_operation = *OnLDAP::Basec::Client_extended_operation;
+*extended_operation_s = *OnLDAP::Basec::Client_extended_operation_s;
+*parse_extended_result = *OnLDAP::Basec::Client_parse_extended_result;
+*parse_extended_partial = *OnLDAP::Basec::Client_parse_extended_partial;
+*parse_intermediate_resp_result = *OnLDAP::Basec::Client_parse_intermediate_resp_result;
+*abandon = *OnLDAP::Basec::Client_abandon;
+*add = *OnLDAP::Basec::Client_add;
+*add_s = *OnLDAP::Basec::Client_add_s;
+*ldap_cancel = *OnLDAP::Basec::Client_ldap_cancel;
+*ldap_cancel_s = *OnLDAP::Basec::Client_ldap_cancel_s;
+*compare = *OnLDAP::Basec::Client_compare;
+*compare_s = *OnLDAP::Basec::Client_compare_s;
+*delete = *OnLDAP::Basec::Client_delete;
+*delete_s = *OnLDAP::Basec::Client_delete_s;
+*modify = *OnLDAP::Basec::Client_modify;
+*modify_s = *OnLDAP::Basec::Client_modify_s;
+*rename = *OnLDAP::Basec::Client_rename;
+*rename_s = *OnLDAP::Basec::Client_rename_s;
+*get_dn = *OnLDAP::Basec::Client_get_dn;
 sub DISOWN {
     my $self = shift;
     my $ptr = tied(%$self);
@@ -519,21 +538,15 @@ sub ACQUIRE {
 }
 
 
-############# Class : OnLDAP::Base::LDAPMod ##############
+############# Class : OnLDAP::Base::Mod ##############
 
-package OnLDAP::Base::LDAPMod;
+package OnLDAP::Base::Mod;
 @ISA = qw( OnLDAP::Base );
 %OWNER = ();
 %ITERATORS = ();
-*swig_mod_op_get = *OnLDAP::Basec::LDAPMod_mod_op_get;
-*swig_mod_op_set = *OnLDAP::Basec::LDAPMod_mod_op_set;
-*swig_mod_type_get = *OnLDAP::Basec::LDAPMod_mod_type_get;
-*swig_mod_type_set = *OnLDAP::Basec::LDAPMod_mod_type_set;
-*swig_mod_vals_get = *OnLDAP::Basec::LDAPMod_mod_vals_get;
-*swig_mod_vals_set = *OnLDAP::Basec::LDAPMod_mod_vals_set;
 sub new {
     my $pkg = shift;
-    my $self = OnLDAP::Basec::new_LDAPMod(@_);
+    my $self = OnLDAP::Basec::new_Mod(@_);
     bless $self, $pkg if defined($self);
 }
 
@@ -543,11 +556,14 @@ sub DESTROY {
     return unless defined $self;
     delete $ITERATORS{$self};
     if (exists $OWNER{$self}) {
-        OnLDAP::Basec::delete_LDAPMod($self);
+        OnLDAP::Basec::delete_Mod($self);
         delete $OWNER{$self};
     }
 }
 
+*op = *OnLDAP::Basec::Mod_op;
+*type = *OnLDAP::Basec::Mod_type;
+*values = *OnLDAP::Basec::Mod_values;
 sub DISOWN {
     my $self = shift;
     my $ptr = tied(%$self);
@@ -601,35 +617,35 @@ sub ACQUIRE {
 }
 
 
-############# Class : OnLDAP::Base::LDAPURLDesc ##############
+############# Class : OnLDAP::Base::URLDesc ##############
 
-package OnLDAP::Base::LDAPURLDesc;
+package OnLDAP::Base::URLDesc;
 @ISA = qw( OnLDAP::Base );
 %OWNER = ();
 %ITERATORS = ();
-*swig_lud_next_get = *OnLDAP::Basec::LDAPURLDesc_lud_next_get;
-*swig_lud_next_set = *OnLDAP::Basec::LDAPURLDesc_lud_next_set;
-*swig_lud_scheme_get = *OnLDAP::Basec::LDAPURLDesc_lud_scheme_get;
-*swig_lud_scheme_set = *OnLDAP::Basec::LDAPURLDesc_lud_scheme_set;
-*swig_lud_host_get = *OnLDAP::Basec::LDAPURLDesc_lud_host_get;
-*swig_lud_host_set = *OnLDAP::Basec::LDAPURLDesc_lud_host_set;
-*swig_lud_port_get = *OnLDAP::Basec::LDAPURLDesc_lud_port_get;
-*swig_lud_port_set = *OnLDAP::Basec::LDAPURLDesc_lud_port_set;
-*swig_lud_dn_get = *OnLDAP::Basec::LDAPURLDesc_lud_dn_get;
-*swig_lud_dn_set = *OnLDAP::Basec::LDAPURLDesc_lud_dn_set;
-*swig_lud_attrs_get = *OnLDAP::Basec::LDAPURLDesc_lud_attrs_get;
-*swig_lud_attrs_set = *OnLDAP::Basec::LDAPURLDesc_lud_attrs_set;
-*swig_lud_scope_get = *OnLDAP::Basec::LDAPURLDesc_lud_scope_get;
-*swig_lud_scope_set = *OnLDAP::Basec::LDAPURLDesc_lud_scope_set;
-*swig_lud_filter_get = *OnLDAP::Basec::LDAPURLDesc_lud_filter_get;
-*swig_lud_filter_set = *OnLDAP::Basec::LDAPURLDesc_lud_filter_set;
-*swig_lud_exts_get = *OnLDAP::Basec::LDAPURLDesc_lud_exts_get;
-*swig_lud_exts_set = *OnLDAP::Basec::LDAPURLDesc_lud_exts_set;
-*swig_lud_crit_exts_get = *OnLDAP::Basec::LDAPURLDesc_lud_crit_exts_get;
-*swig_lud_crit_exts_set = *OnLDAP::Basec::LDAPURLDesc_lud_crit_exts_set;
+*swig_lud_next_get = *OnLDAP::Basec::URLDesc_lud_next_get;
+*swig_lud_next_set = *OnLDAP::Basec::URLDesc_lud_next_set;
+*swig_lud_scheme_get = *OnLDAP::Basec::URLDesc_lud_scheme_get;
+*swig_lud_scheme_set = *OnLDAP::Basec::URLDesc_lud_scheme_set;
+*swig_lud_host_get = *OnLDAP::Basec::URLDesc_lud_host_get;
+*swig_lud_host_set = *OnLDAP::Basec::URLDesc_lud_host_set;
+*swig_lud_port_get = *OnLDAP::Basec::URLDesc_lud_port_get;
+*swig_lud_port_set = *OnLDAP::Basec::URLDesc_lud_port_set;
+*swig_lud_dn_get = *OnLDAP::Basec::URLDesc_lud_dn_get;
+*swig_lud_dn_set = *OnLDAP::Basec::URLDesc_lud_dn_set;
+*swig_lud_attrs_get = *OnLDAP::Basec::URLDesc_lud_attrs_get;
+*swig_lud_attrs_set = *OnLDAP::Basec::URLDesc_lud_attrs_set;
+*swig_lud_scope_get = *OnLDAP::Basec::URLDesc_lud_scope_get;
+*swig_lud_scope_set = *OnLDAP::Basec::URLDesc_lud_scope_set;
+*swig_lud_filter_get = *OnLDAP::Basec::URLDesc_lud_filter_get;
+*swig_lud_filter_set = *OnLDAP::Basec::URLDesc_lud_filter_set;
+*swig_lud_exts_get = *OnLDAP::Basec::URLDesc_lud_exts_get;
+*swig_lud_exts_set = *OnLDAP::Basec::URLDesc_lud_exts_set;
+*swig_lud_crit_exts_get = *OnLDAP::Basec::URLDesc_lud_crit_exts_get;
+*swig_lud_crit_exts_set = *OnLDAP::Basec::URLDesc_lud_crit_exts_set;
 sub new {
     my $pkg = shift;
-    my $self = OnLDAP::Basec::new_LDAPURLDesc(@_);
+    my $self = OnLDAP::Basec::new_URLDesc(@_);
     bless $self, $pkg if defined($self);
 }
 
@@ -639,7 +655,7 @@ sub DESTROY {
     return unless defined $self;
     delete $ITERATORS{$self};
     if (exists $OWNER{$self}) {
-        OnLDAP::Basec::delete_LDAPURLDesc($self);
+        OnLDAP::Basec::delete_URLDesc($self);
         delete $OWNER{$self};
     }
 }
@@ -657,23 +673,23 @@ sub ACQUIRE {
 }
 
 
-############# Class : OnLDAP::Base::LDAPAVA ##############
+############# Class : OnLDAP::Base::AVA ##############
 
-package OnLDAP::Base::LDAPAVA;
+package OnLDAP::Base::AVA;
 @ISA = qw( OnLDAP::Base );
 %OWNER = ();
 %ITERATORS = ();
-*swig_la_attr_get = *OnLDAP::Basec::LDAPAVA_la_attr_get;
-*swig_la_attr_set = *OnLDAP::Basec::LDAPAVA_la_attr_set;
-*swig_la_value_get = *OnLDAP::Basec::LDAPAVA_la_value_get;
-*swig_la_value_set = *OnLDAP::Basec::LDAPAVA_la_value_set;
-*swig_la_flags_get = *OnLDAP::Basec::LDAPAVA_la_flags_get;
-*swig_la_flags_set = *OnLDAP::Basec::LDAPAVA_la_flags_set;
-*swig_la_private_get = *OnLDAP::Basec::LDAPAVA_la_private_get;
-*swig_la_private_set = *OnLDAP::Basec::LDAPAVA_la_private_set;
+*swig_la_attr_get = *OnLDAP::Basec::AVA_la_attr_get;
+*swig_la_attr_set = *OnLDAP::Basec::AVA_la_attr_set;
+*swig_la_value_get = *OnLDAP::Basec::AVA_la_value_get;
+*swig_la_value_set = *OnLDAP::Basec::AVA_la_value_set;
+*swig_la_flags_get = *OnLDAP::Basec::AVA_la_flags_get;
+*swig_la_flags_set = *OnLDAP::Basec::AVA_la_flags_set;
+*swig_la_private_get = *OnLDAP::Basec::AVA_la_private_get;
+*swig_la_private_set = *OnLDAP::Basec::AVA_la_private_set;
 sub new {
     my $pkg = shift;
-    my $self = OnLDAP::Basec::new_LDAPAVA(@_);
+    my $self = OnLDAP::Basec::new_AVA(@_);
     bless $self, $pkg if defined($self);
 }
 
@@ -683,7 +699,7 @@ sub DESTROY {
     return unless defined $self;
     delete $ITERATORS{$self};
     if (exists $OWNER{$self}) {
-        OnLDAP::Basec::delete_LDAPAVA($self);
+        OnLDAP::Basec::delete_AVA($self);
         delete $OWNER{$self};
     }
 }

@@ -1,5 +1,4 @@
 Base/Base.pm
-Base/ldap.i
 Base/ldap_wrap.c
 Base/Makefile.PL
 Base/mycdefs.h
@@ -10,3 +9,11 @@ OnLDAP.pm
 README
 t/1_basic.t
 META.yml                                 Module meta-data (added by MakeMaker)
+Base/bervaluetmap.i
+Base/controltmap.i
+Base/croak.i
+Base/ignore.i
+Base/ldap.i
+Base/modtmap.i
+Base/msgtmap.i
+Base/mytmaps.i

@@ -2,7 +2,7 @@ package OnLDAP;
 
 use 5.008;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use strict;
 use warnings;
@@ -161,21 +161,14 @@ sub _get_option__unknow {
     return undef;
 }
 
-sub unbind_s {
+sub unbind {
     my $this=shift;
-    my $r=$this->_unbind_s;
+    my $r=$this->_unbind(@_);
     $this->_forget;
     return $r;
 }
 
-*unbind=\&unbind_s;
-
-sub unbind_ext {
-    my $this=shift;
-    my $r=$this->_unbind_ext(@_);
-    $this->_forget;
-    return $r;
-}
+*unbind_s=\&unbind;
 
 sub _forget {
     my $this=shift;

@@ -8,351 +8,27 @@
 
 
 %include "typemaps.i";
+%include "croak.i";
 
-%ignore ber_memalloc;
-%ignore ber_memrealloc;
-%ignore ber_memcalloc;
-%ignore ber_memfree;
-%ignore ber_memvfree;
-%ignore ber_bvfree;
-%ignore ber_bvecfree;
-%ignore ber_bvecadd;
+%include "ignore.i";
 
-%ignore ber_dupbv;
-%ignore ber_bvdup;
-%ignore ber_str2bv;
-%ignore ber_mem2bv;
-%ignore ber_strdup;
-%ignore ber_bvarray_free;
-
-%ignore ldap_sasl_bind;
-%ignore ldap_sasl_bind_s;
-%ignore ldap_parse_sasl_bind_result;
-%ignore ldap_simple_bind;
-%ignore ldap_simple_bind_s;
-
-%ignore ldap_init;
-%ignore ldap_first_reference;
-%ignore ldap_next_reference;
-
-%ignore ldap_count_references;
-%ignore ldap_first_entry;
-%ignore ldap_next_entry;
-%ignore ldap_count_entries;
-
-%ignore ldap_first_message;
-%ignore ldap_next_message;
-%ignore ldap_count_messages;
-
-%ignore ldap_result;
-
-%ignore ldap_create_control;
-%ignore ldap_control_free;
-%ignore ldap_controls_free;
-
-%ignore ldap_get_option;
-%ignore ldap_set_option;
-
-%ignore ldap_search_ext;
-%ignore ldap_search_ext_s;
-%ignore ldap_search;
-%ignore ldap_search_s;
-%ignore ldap_search_st;
-
-%ignore ldap_parse_result;
-
-%ignore ldapcontrol::ldctl_oid;
-%ignore ldapcontrol::ldctl_value;
-%ignore ldapcontrol::ldctl_iscritical;
-
-%ignore ber_sockbuf_io_tcp;
-%ignore ber_sockbuf_io_readahead;
-%ignore ber_sockbuf_io_fd;
-%ignore ber_sockbuf_io_debug;
-%ignore ber_sockbuf_io_udp;
-
-%ignore lber_memory_fns;
-%ignore sockbuf_io_desc;
-%ignore sockbuf_io;
-
-
-%typemap(in, numinputs=0) char **CROAK (char *err) "err=NULL; $1=&err;";
-%typemap(argout, numinputs=0) char **CROAK "if (*($1)) SWIG_croak(*($1));";
-#define SETCROAK(e) (*CROAK=(e))
-
-%define make_in_OUTPUT(type)
-%typemap(in, numinputs=0) type * OUTPUT (type temp) "temp=0; $1=&temp;";
-%enddef
-
-%define make_OUTPUT(type)
-make_in_OUTPUT(type);
-%typemap(argout) type * OUTPUT {
-    if (argvi >= items) EXTEND(sp, 1);
-    $result = sv_newmortal();
-    SWIG_MakePtr($result, (void *) *($1),
-		 $descriptor(type), SWIG_OWNER|SWIG_SHADOW);
-    argvi++;
-}
-%enddef
-
-%inline %{
-typedef char ** INLINEPPCHAR;
-typedef char * VALUE;
-%}
-%typemap(out) INLINEPPCHAR %{
-    if ($1) {
-	char **p;
-	for (p=$1; *p; p++) {
-	    if(argvi >= items) EXTEND(sp, 1);
-	    $result = sv_2mortal(newSVpv(*p, 0));
-	    argvi++;
-	}
-    }
-%}
-
-%{
-static char **PERLARRAY2PPCHAR(SV *input, char **croak) {
-    char **p;
-    *croak=NULL;
-    if(SvOK(input)) {
-	if (SvROK(input)) {
-	    AV *av=(AV *)SvRV(input);
-	    if (SvTYPE((SV *)av)==SVt_PVAV) {
-		int len=av_len(av)+1;
-		if(p=calloc(len+1, sizeof(char *))) {
-		    int i;
-		    for(i=0; i<len; i++) {
-			SV **sv=av_fetch(av, i, 0);
-			if (!sv) {
-			    *croak="Sparse array detected";
-			    free(p);
-			    return NULL;
-			}
-			p[i]=SvPV_nolen(*sv);
-		    }
-		    return p; 
-		}
-		else *croak="Out of memory";
-	    }
-	}
-	else *croak="Invalid type, ARRAY ref expected";
-    }
-    return NULL;
-}
-%}
-
-%{
-static void PERLARRAY2PPANY(SV *input, void **output, char **croak,
-			    swig_type_info *type) {
-    void **p;
-    *croak=NULL;
-    if(SvOK(input)) {
-	if(SvROK(input)) {
-	    AV *av=(AV *)SvRV(input);
-	    if (SvTYPE((SV *)av)==SVt_PVAV) {
-		int len=av_len(av)+1;
-		if(p=calloc(len+1, sizeof(void *))) {
-		    int i;
-		    for(i=0; i<len; i++) {
-			SV **sv=av_fetch(av, i, 0);
-			if (!sv) {
-			    *croak="Sparse array detected";
-			    free(p);
-			    *output=NULL;
-			    return;
-			}
-			if (SWIG_ConvertPtr(*sv, p+i, type, 0) < 0) {
-			    *croak="Array element of invalid type";
-			    free(p);
-			    *output=NULL;
-			    return;
-			}
-		    }
-		    *output=p;
-		    return;
-		}
-		else *croak="Out of memory";
-	    }
-	}
-	else *croak="Invalid type, ARRAY ref expected";
-    }
-    *output=NULL;
-}
-%}
-%typemap(in) char **PPCHAR {
-    char *croak;
-    $1=PERLARRAY2PPCHAR($input, &croak);
-    if(croak) SWIG_croak(croak);
-}
-%typemap(freearg) char **PPCHAR "if ($1) free($1);";
-
-%typemap(in) LDAPControl **PPANY {
-    char *croak;
-    PERLARRAY2PPANY($input, (void **)(&($1)), &croak, $*1_descriptor);
-    if(croak) SWIG_croak(croak);
-}
-%typemap(freearg) LDAPControl **PPANY "if ($1) free($1);";
-
-%typemap(in, numinputs=0) int ZERO "$1=0;";
-
-// make_in_OUTPUT(LDAPControl **);
-
-%{
-static SV *PPANY2PERLARRAY(void **pe1,
-			   void (*conversor)(SV *, void *,
-					    swig_type_info *, int),
-			   swig_type_info *type, int flags,
-			   void *freeder) {
-    if (pe1) {
-	AV *av=newAV();
-	SV *output=sv_2mortal(newRV_noinc((SV *)av));
-	void **pe;
-	for (pe=pe1; *pe; pe++) {
-	    SV *sv=newSV(0);
-	    (*conversor)(sv, *pe, type, flags);
-	    av_push(av, sv);
-	}
-	if (freeder) { (*((void (*)(void *))freeder))(pe1); }
-	return output;
-    }
-    else return &PL_sv_undef;
-}
-   
-%}
-%define make_OUTPUT_ARRAY(type, conversor, flags, freeder)
-%typemap(in, numinputs=0) type ** OUTPUT_ARRAY (type *temp) "temp=0; $1=&temp;";
-%typemap(argout) type ** OUTPUT_ARRAY {
-    if (argvi >= items) EXTEND(sp, 1);
-    $result = PPANY2PERLARRAY((void **)(*($1)), conversor,
-			      $descriptor(type), flags, freeder);
-    argvi++;
-}
-%enddef
-
-%define make_OUT_ARRAY(type, conversor, flags, freeder)
-%typemap(out) type * {
-    ST(argvi++)=PPANY2PERLARRAY((void **)($1), conversor,
-				$descriptor(type), flags, freeder);
-}
-%enddef
-
-%{
-
-static LDAPControl *new_control(char *oid, BerValue *bv, int critical) {
-    LDAPControl *c;
-    if (c=malloc(sizeof(*c))) {
-	c->ldctl_oid=oid ? strdup(oid) : NULL;
-	if (bv) {
-	    c->ldctl_value.bv_len=bv->bv_len;
-	    if (bv->bv_val) {
-		char *mem=(char *)malloc(bv->bv_len+1);
-		memcpy(mem, bv->bv_val, bv->bv_len);
-		mem[bv->bv_len]='\0';
-		c->ldctl_value.bv_val=mem;
-	    }
-	    else c->ldctl_value.bv_val=NULL;
-	}
-	else {
-	    c->ldctl_value.bv_val=NULL;
-	    c->ldctl_value.bv_len=0;
-	}
-	c->ldctl_iscritical=critical;
-    }
-    return c;
-}
-
-static LDAPControl *dup_control(LDAPControl *s) {
-    return new_control(s->ldctl_oid,
-		       &(s->ldctl_value), 
-		       s->ldctl_iscritical);
-}
-
-static void free_control(LDAPControl *s) {
-    if (s) {
-	if (s->ldctl_oid) free(s->ldctl_oid);
-	if (s->ldctl_value.bv_val) free(s->ldctl_value.bv_val);
-	free(s);
-    }
-}
-
-static void LDAPControl2PERL_COPY(SV *output, void *input,
-				 swig_type_info *type, int flags) {
-    LDAPControl *copy=dup_control((LDAPControl *) input);
-    return SWIG_MakePtr(output, (void *) copy,
-			type, flags|SWIG_OWNER);
-}
-%}
-
-make_OUT_ARRAY(LDAPControl *, &LDAPControl2PERL_COPY,
-	       SWIG_SHADOW, &ldap_controls_free );
-make_OUTPUT_ARRAY(LDAPControl *, &LDAPControl2PERL_COPY,
-		  SWIG_SHADOW, &ldap_controls_free );
-%typemap(out) LDAPControl * %{
-    LDAPControl2PERL_COPY(ST(argvi++), (void *)($1),
-			  $1_descriptor, SWIG_SHADOW|SWIG_OWNER);
-%}
-
-%{
-static void PCHAR2PERL(SV *output, void *input,
-		      swig_type_info *type, int flags) {
-    sv_setpv(output, (char *)input);
-}
-%}
-/* make_OUTPUT_ARRAY(char *, &PCHAR2PERL, 0, NULL); */
-make_OUTPUT_ARRAY(VALUE, &PCHAR2PERL, 0, &ldap_value_free);
-
-make_in_OUTPUT(BerValue *);
-%typemap(argout) BerValue ** OUTPUTSTR {
-    if (argvi >= items) EXTEND(sp, 1);
-    if (*($1) && (*($1))->bv_val) {
-	$result = sv_2mortal(newSVpvn((*($1))->bv_val, (*($1))->bv_len));
-	ber_bvfree(*($1));
-    }
-    else
-	$result = &PL_sv_undef;
-    argvi++;
-}
-
-%typemap(out) BerValue {
-    if (($1).bv_val)
-	ST(argvi) = sv_2mortal(newSVpvn(($1).bv_val, ($1).bv_len));
-    else
-	ST(argvi) = &PL_sv_undef;
-    argvi++;
-}
-
-%typemap(in, numinputs=0) BerValue ** OUTPUTSTR (BerValue *temp) "temp=0; $1=&temp;";
-%typemap(in) BerValue * (BerValue temp) %{
-    if (SvROK((SV *)($input))) {
-	if (SWIG_ConvertPtr($input, (void **) &$1, $1_descriptor,0) < 0) {
-            SWIG_croak("Type error in argument $argnum of $symname. Expected $1_mangle or string");
-        }
-    }
-    else if (SvOK((SV *)($input))) {
-	int n;
-	$1=&temp;
-	temp.bv_val=SvPV((SV *)($input), n);
-	temp.bv_len=n;
-    }
-    else {
-	$1=NULL;
-    }
-%}
-
-
-make_OUTPUT(struct ldapmsg *);
+%include "mytmaps.i";
+%include "controltmap.i";
+%include "bervaluetmap.i";
+%include "msgtmap.i"
+%include "modtmap.i"
 
 %rename(Client) ldap;
 %rename(Message) ldapmsg;
 %rename(Control) ldapcontrol;
 %rename(APIInfo) ldapapiinfo;
 %rename(APIFeatureInfo) ldap_apifeature_info;
+%rename(URLDesc) ldap_url_desc;
+%rename(Mod) ldapmod;
+%rename(AVA) ldap_ava;
 
 struct ldap {};
 struct ldapmsg {};
-
-%apply struct ldapmsg **OUTPUT { LDAPMessage **OUTPUT };
-
 
 %include "mycdefs.h"
 %include "lber.h"
@@ -361,6 +37,8 @@ struct ldapmsg {};
 #ifndef LDAP_OPT_RESULT_CODE
 #define LDAP_OPT_RESULT_CODE LDAP_OPT_ERROR_NUMBER
 #endif
+
+
 
 %extend BerValue {
     %ignore bv_len;
@@ -381,7 +59,7 @@ struct ldapmsg {};
     int info_version() { return self->ldapai_info_version; }
     int api_version() { return self->ldapai_api_version; }
     int protocol_version() { return self->ldapai_protocol_version; }
-    INLINEPPCHAR extensions() { return self->ldapai_extensions; }
+    PUSHPPchar extensions() { return self->ldapai_extensions; }
     char *vendor_name() { return self->ldapai_vendor_name; }
     int vendor_version() { return self->ldapai_vendor_version; }
 }
@@ -400,6 +78,40 @@ struct ldapmsg {};
 	free (self);
     }
 }
+
+%extend LDAPMod {
+
+    make_OUT_ARRAY(BerValue, BerValue2RV, 0, NULL);
+    %typemap(freearg) char * "";
+
+    LDAPMod (int op, char *type, SV *array, char **CROAK) {
+	LDAPMod *self;
+	*CROAK=NULL;
+	if (self=malloc(sizeof(struct ldapmod *))) {
+	    self->mod_op=op|LDAP_MOD_BVALUES;
+	    self->mod_type=strdup(type);
+	    self->mod_bvalues=RV2BerValueARRAY(array, 1, CROAK);
+	    if (*CROAK) {
+		free(self);
+		return NULL;
+	    }
+	}
+	return self;
+    }
+
+    ~LDAPMod() {
+	if (self) {
+	    if (self->mod_type) free(self->mod_type);
+	    free_BerValueARRAY(self->mod_bvalues, 1);
+	    free (self);
+	}
+    }
+
+    int op() { return self->mod_op; }
+    char *type() { return self->mod_type; }
+    BerValue **values() { return self->mod_bvalues; }
+}
+
 %extend LDAPControl {
 
 
@@ -469,16 +181,8 @@ struct ldapmsg {};
 
     /* static struct ldap * open(char *host, int port=LDAP_PORT); */
 
-    int _unbind() {
-	if (!self) return -1;
-	return ldap_unbind(self);
-    }
-    int _unbind_s() {
-	if (!self) return -1;
-	return ldap_unbind(self);
-    }
-    int _unbind_ext(LDAPControl **serverctrls,
-		    LDAPControl **clientctrls) {
+    int _unbind(LDAPControl **serverctrls=NULL,
+		LDAPControl **clientctrls=NULL) {
 	if (!self) return -1;
 	return ldap_unbind_ext(self, serverctrls, clientctrls);
     }
@@ -587,18 +291,18 @@ struct ldapmsg {};
     LDAPMessage *first_reference(LDAPMessage *chain);
     LDAPMessage *next_reference(LDAPMessage *ref);
     int count_references(LDAPMessage *chain);
-    /* int ldap_parse_reference(LDAP *ld,
+    int ldap_parse_reference(LDAP *ld,
 			     LDAPMessage *ref,
-			     char ***OUT,
-			     LDAPControl ***OUT,
-			     int ZERO); */
+			     STRING **OUTPUT_ARRAY,
+			     LDAPControl ***OUTPUT_ARRAY,
+			     int ZERO);
 
     /* in getentry.c: */
     LDAPMessage *first_entry(LDAPMessage *chain);
     LDAPMessage *next_entry(LDAPMessage *entry);
     int count_entries(LDAPMessage *chain);
-    /* int get_entry_controls(LDAPMessage *entry,
-                              LDAPControl ***serverctrls); */
+    int get_entry_controls(LDAPMessage *entry,
+			   LDAPControl ***OUTPUT_ARRAY);
     
     /* in addentry.c */
     /* LDAPMessage *delete_result_entry(LDAPMessage **OUT,
@@ -609,16 +313,18 @@ struct ldapmsg {};
 	       struct timeval *timeout=NULL,
 	       LDAPMessage **OUTPUT);
 
+    %rename(search) search_ext;
     int search_ext(char *base=NULL, int scope=0, char *filter=NULL,
-		   char **PPCHAR=NULL, int attrsonly=0,
+		   char **PPchar=NULL, int attrsonly=0,
 		   LDAPControl **serverctrls=NULL,
                    LDAPControl **clientctrls=NULL,
 		   struct timeval *timeout=0,
 		   int sizelimit=0,
 		   int *OUTPUT);
 
+    %rename(search_s) search_ext_s;
     int search_ext_s(char *base=NULL, int scope=0, char *filter=NULL,
-		      char **PPCHAR=NULL, int attrsonly=NULL,
+		      char **PPchar=NULL, int attrsonly=NULL,
 		      LDAPControl **serverctrls=NULL,
 		      LDAPControl **clientctrls=NULL,
 		      struct timeval *timeout=NULL,
@@ -629,26 +335,146 @@ struct ldapmsg {};
 		 int *OUTPUT,
 		 char **OUTPUT,
 		 char **OUTPUT,
-		 VALUE **OUTPUT_ARRAY,
+		 STRING **OUTPUT_ARRAY,
 		 LDAPControl ***OUTPUT_ARRAY,
 		 int ZERO);
+
+    /* in extended.c */
+    int extended_operation(char *reqoid,
+			   struct berval *reqdata,
+			   LDAPControl **serverctrls=NULL,
+			   LDAPControl **clientctrls=NULL,
+			   int *OUTPUT);
+
+    int extended_operation_s(char *reqoid,
+			     struct berval *reqdata,
+			     LDAPControl **serverctrls=NULL,
+			     LDAPControl **clientctrls=NULL,
+			     char **OUTPUT,
+			     BerValue **OUTPUTSTR);
+    
+    int parse_extended_result(LDAPMessage *res,
+			      char **OUTPUT,
+			      BerValue **OUTPUTSTR,
+			      int ZERO);
+    
+    int parse_extended_partial(LDAPMessage *res,
+			       char **OUTPUT,
+			       BerValue **OUTPUTSTR,
+			       LDAPControl ***OUTPUT_ARRAY,
+			       int ZERO);
+    
+    int parse_intermediate_resp_result(LDAPMessage *res,
+				       char **OUTPUT,
+				       BerValue **OUTPUTSTR,
+				       int ZERO);
+
+    /* in abandon.c */
+    %rename(abandon) abandon_ext;
+    int abandon_ext(int msgid,
+		    LDAPControl **serverctrls=NULL,
+		    LDAPControl **clientctrls=NULL);
+
+    /* in add.c */
+    %rename(add) add_ext;
+    int add_ext(char *dn,
+		LDAPMod **attrs,
+		LDAPControl **serverctrls=NULL,
+		LDAPControl **clientctrls=NULL,
+		int *OUTPUT);
+
+    %rename(add_s) add_ext_s;
+    int add_ext_s(char *dn,
+		  LDAPMod **attrs,
+		  LDAPControl **serverctrls=NULL,
+		  LDAPControl **clientctrls=NULL);
+
+    /* in cancel.c */
+    int ldap_cancel(int cancelid,
+		    LDAPControl **sctrls=NULL,
+		    LDAPControl **cctrls=NULL,
+		    int *OUTPUT);
+
+    int ldap_cancel_s(int cancelid,
+		      LDAPControl **sctrls=NULL,
+		      LDAPControl **cctrls=NULL);
+
+    /* in compare.c */
+    %rename(compare) compare_ext;
+    int compare_ext(char *dn,
+		    char *attr,
+		    struct berval *bvalue,
+		    LDAPControl **serverctrls,
+		    LDAPControl **clientctrls,
+		    int *OUTPUT);
+    
+    %rename(compare_s) compare_ext_s;
+    int compare_ext_s(char *dn,
+		      char *attr,
+		      struct berval *bvalue,
+		      LDAPControl **serverctrls,
+		      LDAPControl **clientctrls);
+
+    /* in delete.c */
+    %rename(delete) delete_ext;
+    int delete_ext(char *dn,
+		   LDAPControl **sctrls=NULL,
+		   LDAPControl **cctrls=NULL,
+		   int *OUTPUT);
+
+    %rename(delete_s) delete_ext_s;
+    int delete_ext_s(char *dn,
+		     LDAPControl **sctrls=NULL,
+		     LDAPControl **cctrls=NULL);
+
+    /* in error.c */
+    /* ldap_err2sting(...) */
+
+    /* in modify.c */
+    %rename(modify) modify_ext;
+    int modify_ext(char *dn,
+		   LDAPMod **mods,
+		   LDAPControl **sctrls=NULL,
+		   LDAPControl **cctrls=NULL,
+		   int *OUTPUT);
+
+    %rename(modify_s) modify_ext_s;
+    int modify_ext_s(char *dn,
+		     LDAPMod **mods,
+		     LDAPControl **sctrls=NULL,
+		     LDAPControl **cctrls=NULL);
+    
+    /* in modrdn.c */
+    int rename(char *dn,
+	       char *new_rdn,
+	       char *new_superior,
+	       int delete_old_rdn,
+	       LDAPControl **sctrls=NULL,
+	       LDAPControl **cctrls=NULL,
+	       int *OUTPUT);
+    
+    int rename_s(char *dn,
+		 char *new_rdn,
+		 char *new_superior,
+		 int delete_old_rdn,
+		 LDAPControl **sctrls=NULL,
+		 LDAPControl **cctrls=NULL);
+
+    /* in getdn.c */
+    char *get_dn(LDAPMessage *entry);
 
 }
 
 %extend ldapmsg {
-
     ldapmsg(char **CROAK) {
 	SETCROAK("ldapmsg->new access forbidden");
     }
-
     ~ldapmsg() { ldap_msgfree(self); }
+    int type() { return ldap_msgtype(self); }
+    int id() { return ldap_msgid(self); }
+}
 
-    int type() {
-	return ldap_msgtype(self);
-    }
-    int id() {
-	return ldap_msgid(self);
-    }
+%extend LDAPAVA {
 }
 
 

@@ -633,56 +633,58 @@ static void _swig_create_magic(CPerlObj *pPerl, SV *sv, const char *name, int (C
 #define  SWIGTYPE_p_LDAPDN_rewrite_func swig_types[2] 
 #define  SWIGTYPE_p_ldap_url_desc swig_types[3] 
 #define  SWIGTYPE_p_Sockbuf swig_types[4] 
-#define  SWIGTYPE_p_LDAPMessage swig_types[5] 
-#define  SWIGTYPE_p_p_LDAPMessage swig_types[6] 
+#define  SWIGTYPE_p_p_LDAPMessage swig_types[5] 
+#define  SWIGTYPE_p_LDAPMessage swig_types[6] 
 #define  SWIGTYPE_p_LDAP_SASL_INTERACT_PROC swig_types[7] 
 #define  SWIGTYPE_p_LDAPVLVInfo swig_types[8] 
-#define  SWIGTYPE_p_p_char swig_types[9] 
-#define  SWIGTYPE_p_LDAP_REBIND_PROC swig_types[10] 
-#define  SWIGTYPE_p_p_p_char swig_types[11] 
-#define  SWIGTYPE_p_LDAPRDN swig_types[12] 
-#define  SWIGTYPE_p_p_LDAPRDN swig_types[13] 
-#define  SWIGTYPE_p_LDAPSortKey swig_types[14] 
-#define  SWIGTYPE_p_p_p_LDAPSortKey swig_types[15] 
-#define  SWIGTYPE_p_p_LDAPSortKey swig_types[16] 
-#define  SWIGTYPE_p_Seqorset swig_types[17] 
-#define  SWIGTYPE_p_void swig_types[18] 
-#define  SWIGTYPE_p_p_void swig_types[19] 
-#define  SWIGTYPE_p_p_p_LDAPControl swig_types[20] 
-#define  SWIGTYPE_p_LDAPControl swig_types[21] 
-#define  SWIGTYPE_p_p_LDAPControl swig_types[22] 
-#define  SWIGTYPE_p_Sockbuf_IO swig_types[23] 
-#define  SWIGTYPE_p_LDAPMod_mod_vals swig_types[24] 
-#define  SWIGTYPE_p_ber_tag_t swig_types[25] 
-#define  SWIGTYPE_p_BerVarray swig_types[26] 
-#define  SWIGTYPE_p_ber_int_t swig_types[27] 
-#define  SWIGTYPE_p_LDAPURLDesc swig_types[28] 
-#define  SWIGTYPE_p_p_LDAPURLDesc swig_types[29] 
-#define  SWIGTYPE_p_ber_len_t swig_types[30] 
-#define  SWIGTYPE_p_ldapmsg swig_types[31] 
-#define  SWIGTYPE_p_p_berval swig_types[32] 
-#define  SWIGTYPE_p_berval swig_types[33] 
-#define  SWIGTYPE_p_p_LDAPMod swig_types[34] 
-#define  SWIGTYPE_p_LDAPMod swig_types[35] 
-#define  SWIGTYPE_p_p_VALUE swig_types[36] 
-#define  SWIGTYPE_VALUE swig_types[37] 
-#define  SWIGTYPE_p_BerValue swig_types[38] 
-#define  SWIGTYPE_p_p_BerValue swig_types[39] 
-#define  SWIGTYPE_p_timeval swig_types[40] 
-#define  SWIGTYPE_p_LDAPAPIFeatureInfo swig_types[41] 
-#define  SWIGTYPE_p_LDAPDN swig_types[42] 
-#define  SWIGTYPE_p_p_LDAPDN swig_types[43] 
-#define  SWIGTYPE_p_BerElement swig_types[44] 
-#define  SWIGTYPE_p_p_BerElement swig_types[45] 
-#define  SWIGTYPE_p_int swig_types[46] 
-#define  SWIGTYPE_p_LDAPAVA swig_types[47] 
-#define  SWIGTYPE_p_LDAP swig_types[48] 
-#define  SWIGTYPE_p_p_LDAP swig_types[49] 
-#define  SWIGTYPE_p_LDAP_SORT_AD_CMP_PROC swig_types[50] 
-#define  SWIGTYPE_p_LDAP_SORT_AV_CMP_PROC swig_types[51] 
-#define  SWIGTYPE_p_unsigned_long swig_types[52] 
-#define  SWIGTYPE_p_LDAPAPIInfo swig_types[53] 
-static swig_type_info *swig_types[55];
+#define  SWIGTYPE_STRING swig_types[9] 
+#define  SWIGTYPE_p_p_STRING swig_types[10] 
+#define  SWIGTYPE_p_p_char swig_types[11] 
+#define  SWIGTYPE_p_LDAP_REBIND_PROC swig_types[12] 
+#define  SWIGTYPE_p_p_p_char swig_types[13] 
+#define  SWIGTYPE_p_LDAPRDN swig_types[14] 
+#define  SWIGTYPE_p_p_LDAPRDN swig_types[15] 
+#define  SWIGTYPE_p_LDAPSortKey swig_types[16] 
+#define  SWIGTYPE_p_p_p_LDAPSortKey swig_types[17] 
+#define  SWIGTYPE_p_p_LDAPSortKey swig_types[18] 
+#define  SWIGTYPE_p_Seqorset swig_types[19] 
+#define  SWIGTYPE_p_void swig_types[20] 
+#define  SWIGTYPE_p_p_void swig_types[21] 
+#define  SWIGTYPE_p_p_p_LDAPControl swig_types[22] 
+#define  SWIGTYPE_p_LDAPControl swig_types[23] 
+#define  SWIGTYPE_p_p_LDAPControl swig_types[24] 
+#define  SWIGTYPE_p_Sockbuf_IO swig_types[25] 
+#define  SWIGTYPE_p_LDAPMod_mod_vals swig_types[26] 
+#define  SWIGTYPE_p_ber_tag_t swig_types[27] 
+#define  SWIGTYPE_p_BerVarray swig_types[28] 
+#define  SWIGTYPE_p_ber_int_t swig_types[29] 
+#define  SWIGTYPE_p_LDAPURLDesc swig_types[30] 
+#define  SWIGTYPE_p_p_LDAPURLDesc swig_types[31] 
+#define  SWIGTYPE_p_ber_len_t swig_types[32] 
+#define  SWIGTYPE_p_ldapmsg swig_types[33] 
+#define  SWIGTYPE_p_p_berval swig_types[34] 
+#define  SWIGTYPE_p_berval swig_types[35] 
+#define  SWIGTYPE_p_LDAPMod swig_types[36] 
+#define  SWIGTYPE_p_p_LDAPMod swig_types[37] 
+#define  SWIGTYPE_BerValue swig_types[38] 
+#define  SWIGTYPE_p_BerValue swig_types[39] 
+#define  SWIGTYPE_p_p_BerValue swig_types[40] 
+#define  SWIGTYPE_p_SV swig_types[41] 
+#define  SWIGTYPE_p_timeval swig_types[42] 
+#define  SWIGTYPE_p_LDAPAPIFeatureInfo swig_types[43] 
+#define  SWIGTYPE_p_LDAPDN swig_types[44] 
+#define  SWIGTYPE_p_p_LDAPDN swig_types[45] 
+#define  SWIGTYPE_p_BerElement swig_types[46] 
+#define  SWIGTYPE_p_p_BerElement swig_types[47] 
+#define  SWIGTYPE_p_int swig_types[48] 
+#define  SWIGTYPE_p_LDAPAVA swig_types[49] 
+#define  SWIGTYPE_p_LDAP swig_types[50] 
+#define  SWIGTYPE_p_p_LDAP swig_types[51] 
+#define  SWIGTYPE_p_LDAP_SORT_AD_CMP_PROC swig_types[52] 
+#define  SWIGTYPE_p_LDAP_SORT_AV_CMP_PROC swig_types[53] 
+#define  SWIGTYPE_p_unsigned_long swig_types[54] 
+#define  SWIGTYPE_p_LDAPAPIInfo swig_types[55] 
+static swig_type_info *swig_types[57];
 
 /* -------- TYPES TABLE (END) -------- */
 
@@ -711,11 +713,11 @@ SWIGEXPORT(void) SWIG_init (CV *cv, CPerlObj *);
 #include <ldap.h>
 
 
-typedef char ** INLINEPPCHAR;
-typedef char * VALUE;
+typedef char ** PUSHPPchar;
+typedef char * STRING;
 
 
-static char **PERLARRAY2PPCHAR(SV *input, char **croak) {
+static char **PERLARRAY2PPchar(SV *input, char **croak) {
     char **p;
     *croak=NULL;
     if(SvOK(input)) {
@@ -805,6 +807,12 @@ static SV *PPANY2PERLARRAY(void **pe1,
    
 
 
+static void PCHAR2PERL(SV *output, void *input,
+		      swig_type_info *type, int flags) {
+    sv_setpv(output, (char *)input);
+}
+
+
 
 static LDAPControl *new_control(char *oid, BerValue *bv, int critical) {
     LDAPControl *c;
@@ -851,24 +859,97 @@ static void LDAPControl2PERL_COPY(SV *output, void *input,
 }
 
 
-static void PCHAR2PERL(SV *output, void *input,
-		      swig_type_info *type, int flags) {
-    sv_setpv(output, (char *)input);
+
+static void free_BerValueARRAY(BerValue **array, int copied) {
+    if (array) {
+	BerValue *bv=*array;
+	if (bv) {
+	    if (copied) {
+		char *v=bv->bv_val;
+		if (v) {
+		    free(v);
+		}
+	    }
+	    free(bv);
+	}
+	free(array);
+    }
+	
 }
+
+
+static BerValue **RV2BerValueARRAY(SV *rv, int copy, char **croak) {
+    if (SvOK(rv)) {
+	if (SvROK(rv)) {
+	    AV *av=(AV *)SvRV(rv);
+	    if (SvTYPE(av)==SVt_PVAV) {
+		int len=av_len(av)+1;
+		BerValue **array=malloc(sizeof(BerValue *)*len+1);
+		BerValue *bv=malloc(sizeof(BerValue)*len);
+		if (array && bv) {
+		    int i;
+		    int clen=0;
+		    for (i=0; i<len; i++) {
+			SV **sv=av_fetch(av, i, 0);
+			array[i]=bv+i;
+			if (sv) {
+			    int l;
+			    bv[i].bv_val=SvPV(*sv, l);
+			    bv[i].bv_len=l;
+			    clen+=l+1;
+			}
+			else {
+			    bv[i].bv_len=0;
+			    bv[i].bv_val="";
+			}
+		    }
+		    array[len]=NULL;
+		    if (copy) {
+			char *v=malloc(clen+1);
+			if (v) {
+			    for (i=0; i<len; i++) {
+				int l=bv[i].bv_len;
+				memcpy(v, bv[i].bv_val, l);
+				bv[i].bv_val=v;
+				v+=l;
+				*v='\0';
+				v++;
+			    }
+			}
+			else {
+			    free_BerValueARRAY(array, 0);
+			    *croak="Out of memory";
+			    return NULL;
+			}
+		    }
+		    return array;
+		}
+		*croak="Out of memory";
+		return NULL;
+	    }
+	}
+	*croak="Type error array of scalars representing BerValues expected";
+    }
+    return NULL;
+}
+
+static void BerValue2RV(SV *output, void *input,
+			swig_type_info *type, int flags) {
+    BerValue *bv=(BerValue *)input;
+    if (bv) {
+	sv_setpvn(output, bv->bv_val, bv->bv_len);
+    }
+    else {
+	sv_setref_pv(output, NULL, NULL);
+    }
+}
+
 
 struct ldap *new_ldap(char *host,int port){
 	return ldap_init(host, port);
     }
 void delete_ldap(struct ldap *self){}
-int ldap__unbind(struct ldap *self){
-	if (!self) return -1;
-	return ldap_unbind(self);
-    }
-int ldap__unbind_s(struct ldap *self){
-	if (!self) return -1;
-	return ldap_unbind(self);
-    }
-int ldap__unbind_ext(struct ldap *self,LDAPControl **serverctrls,LDAPControl **clientctrls){
+int ldap__unbind(struct ldap *self,LDAPControl **serverctrls,LDAPControl **clientctrls){
 	if (!self) return -1;
 	return ldap_unbind_ext(self, serverctrls, clientctrls);
     }
@@ -946,12 +1027,8 @@ struct ldapmsg *new_ldapmsg(char **CROAK){
 	(*CROAK=("ldapmsg->new access forbidden"));
     }
 void delete_ldapmsg(struct ldapmsg *self){ ldap_msgfree(self); }
-int ldapmsg_type(struct ldapmsg *self){
-	return ldap_msgtype(self);
-    }
-int ldapmsg_id(struct ldapmsg *self){
-	return ldap_msgid(self);
-    }
+int ldapmsg_type(struct ldapmsg *self){ return ldap_msgtype(self); }
+int ldapmsg_id(struct ldapmsg *self){ return ldap_msgid(self); }
 int BerValue_lenght(BerValue *self){ return self->bv_len; }
 char *BerValue_string(BerValue *self){ return self->bv_val; }
 void delete_BerValue(BerValue *self){ ber_bvfree(self); }
@@ -1015,7 +1092,7 @@ extern int *ber_errno_addr(void);
 int LDAPAPIInfo_info_version(LDAPAPIInfo *self){ return self->ldapai_info_version; }
 int LDAPAPIInfo_api_version(LDAPAPIInfo *self){ return self->ldapai_api_version; }
 int LDAPAPIInfo_protocol_version(LDAPAPIInfo *self){ return self->ldapai_protocol_version; }
-INLINEPPCHAR LDAPAPIInfo_extensions(LDAPAPIInfo *self){ return self->ldapai_extensions; }
+PUSHPPchar LDAPAPIInfo_extensions(LDAPAPIInfo *self){ return self->ldapai_extensions; }
 char *LDAPAPIInfo_vendor_name(LDAPAPIInfo *self){ return self->ldapai_vendor_name; }
 int LDAPAPIInfo_vendor_version(LDAPAPIInfo *self){ return self->ldapai_vendor_version; }
 int LDAPAPIFeatureInfo_info_version(LDAPAPIFeatureInfo *self){ return self->ldapaif_info_version; }
@@ -1039,6 +1116,30 @@ typedef union {
 	} LDAPMod_mod_vals;
 
 
+LDAPMod *new_LDAPMod(int op,char *type,SV *array,char **CROAK){
+	LDAPMod *self;
+	*CROAK=NULL;
+	if (self=malloc(sizeof(struct ldapmod *))) {
+	    self->mod_op=op|(0x0080);
+	    self->mod_type=strdup(type);
+	    self->mod_vals.modv_bvals=RV2BerValueARRAY(array, 1, CROAK);
+	    if (*CROAK) {
+		free(self);
+		return NULL;
+	    }
+	}
+	return self;
+    }
+void delete_LDAPMod(LDAPMod *self){
+	if (self) {
+	    if (self->mod_type) free(self->mod_type);
+	    free_BerValueARRAY(self->mod_vals.modv_bvals, 1);
+	    free (self);
+	}
+    }
+int LDAPMod_op(LDAPMod *self){ return self->mod_op; }
+char *LDAPMod_type(LDAPMod *self){ return self->mod_type; }
+BerValue **LDAPMod_values(LDAPMod *self){ return self->mod_vals.modv_bvals; }
 extern int ldap_set_rebind_proc(LDAP *,LDAP_REBIND_PROC *,void *);
 extern int ldap_domain2dn(char const *,char **);
 extern int ldap_dn2domain(char const *,char **);
@@ -1530,89 +1631,35 @@ XS(_wrap_Client__unbind) {
     const char *_swigerr = _swigmsg;
     {
         struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPControl **arg2 = (LDAPControl **) NULL ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
         int result;
         int argvi = 0;
         dXSARGS;
         
-        if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: Client__unbind(self);");
+        if ((items < 1) || (items > 3)) {
+            SWIG_croak("Usage: Client__unbind(self,serverctrls,clientctrls);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
                 SWIG_croak("Type error in argument 1 of Client__unbind. Expected _p_ldap");
             }
         }
-        result = (int)ldap__unbind(arg1);
-        
-        ST(argvi) = sv_newmortal();
-        sv_setiv(ST(argvi++), (IV) result);
-        XSRETURN(argvi);
-        fail:
-        (void) _swigerr;
-    }
-    croak(_swigerr);
-}
-
-
-XS(_wrap_Client__unbind_s) {
-    char _swigmsg[SWIG_MAX_ERRMSG] = "";
-    const char *_swigerr = _swigmsg;
-    {
-        struct ldap *arg1 = (struct ldap *) 0 ;
-        int result;
-        int argvi = 0;
-        dXSARGS;
-        
-        if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: Client__unbind_s(self);");
-        }
-        {
-            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
-                SWIG_croak("Type error in argument 1 of Client__unbind_s. Expected _p_ldap");
+        if (items > 1) {
+            {
+                if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 2 of Client__unbind. Expected _p_p_LDAPControl");
+                }
             }
         }
-        result = (int)ldap__unbind_s(arg1);
-        
-        ST(argvi) = sv_newmortal();
-        sv_setiv(ST(argvi++), (IV) result);
-        XSRETURN(argvi);
-        fail:
-        (void) _swigerr;
-    }
-    croak(_swigerr);
-}
-
-
-XS(_wrap_Client__unbind_ext) {
-    char _swigmsg[SWIG_MAX_ERRMSG] = "";
-    const char *_swigerr = _swigmsg;
-    {
-        struct ldap *arg1 = (struct ldap *) 0 ;
-        LDAPControl **arg2 = (LDAPControl **) 0 ;
-        LDAPControl **arg3 = (LDAPControl **) 0 ;
-        int result;
-        int argvi = 0;
-        dXSARGS;
-        
-        if ((items < 3) || (items > 3)) {
-            SWIG_croak("Usage: Client__unbind_ext(self,serverctrls,clientctrls);");
-        }
-        {
-            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
-                SWIG_croak("Type error in argument 1 of Client__unbind_ext. Expected _p_ldap");
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client__unbind. Expected _p_p_LDAPControl");
+                }
             }
         }
-        {
-            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                SWIG_croak("Type error in argument 2 of Client__unbind_ext. Expected _p_p_LDAPControl");
-            }
-        }
-        {
-            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                SWIG_croak("Type error in argument 3 of Client__unbind_ext. Expected _p_p_LDAPControl");
-            }
-        }
-        result = (int)ldap__unbind_ext(arg1,arg2,arg3);
+        result = (int)ldap__unbind(arg1,arg2,arg3);
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
@@ -2201,6 +2248,67 @@ XS(_wrap_Client_count_references) {
 }
 
 
+XS(_wrap_Client_ldap_parse_reference) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAP *arg2 = (LDAP *) 0 ;
+        LDAPMessage *arg3 = (LDAPMessage *) 0 ;
+        STRING **arg4 = (STRING **) 0 ;
+        LDAPControl ***arg5 = (LDAPControl ***) 0 ;
+        int arg6 ;
+        int result;
+        STRING *temp4 ;
+        LDAPControl **temp5 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp4=0; arg4=&temp4;
+        temp5=0; arg5=&temp5;
+        arg6=0;
+        if ((items < 3) || (items > 3)) {
+            SWIG_croak("Usage: Client_ldap_parse_reference(self,ld,ref);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_ldap_parse_reference. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAP,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_ldap_parse_reference. Expected _p_LDAP");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_ldap_parse_reference. Expected _p_LDAPMessage");
+            }
+        }
+        result = (int)ldap_ldap_parse_reference(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = PPANY2PERLARRAY((void **)(*(arg4)), &PCHAR2PERL,
+            SWIGTYPE_STRING, 0, &ldap_value_free);
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = PPANY2PERLARRAY((void **)(*(arg5)), &LDAPControl2PERL_COPY,
+            SWIGTYPE_p_LDAPControl, SWIG_SHADOW, &ldap_controls_free);
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
 XS(_wrap_Client_first_entry) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
@@ -2306,6 +2414,50 @@ XS(_wrap_Client_count_entries) {
 }
 
 
+XS(_wrap_Client_get_entry_controls) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPMessage *arg2 = (LDAPMessage *) 0 ;
+        LDAPControl ***arg3 = (LDAPControl ***) 0 ;
+        int result;
+        LDAPControl **temp3 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp3=0; arg3=&temp3;
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_get_entry_controls(self,entry);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_get_entry_controls. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_get_entry_controls. Expected _p_LDAPMessage");
+            }
+        }
+        result = (int)ldap_get_entry_controls(arg1,arg2,arg3);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = PPANY2PERLARRAY((void **)(*(arg3)), &LDAPControl2PERL_COPY,
+            SWIGTYPE_p_LDAPControl, SWIG_SHADOW, &ldap_controls_free);
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
 XS(_wrap_Client_result) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
@@ -2359,7 +2511,7 @@ XS(_wrap_Client_result) {
 }
 
 
-XS(_wrap_Client_search_ext) {
+XS(_wrap_Client_search) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -2381,11 +2533,11 @@ XS(_wrap_Client_search_ext) {
         
         arg11 = &temp11;
         if ((items < 1) || (items > 10)) {
-            SWIG_croak("Usage: Client_search_ext(self,base,scope,filter,PPCHAR,attrsonly,serverctrls,clientctrls,timeout,sizelimit);");
+            SWIG_croak("Usage: Client_search(self,base,scope,filter,PPchar,attrsonly,serverctrls,clientctrls,timeout,sizelimit);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
-                SWIG_croak("Type error in argument 1 of Client_search_ext. Expected _p_ldap");
+                SWIG_croak("Type error in argument 1 of Client_search. Expected _p_ldap");
             }
         }
         if (items > 1) {
@@ -2402,7 +2554,7 @@ XS(_wrap_Client_search_ext) {
         if (items > 4) {
             {
                 char *croak;
-                arg5=PERLARRAY2PPCHAR(ST(4), &croak);
+                arg5=PERLARRAY2PPchar(ST(4), &croak);
                 if(croak) SWIG_croak(croak);
             }
         }
@@ -2412,21 +2564,21 @@ XS(_wrap_Client_search_ext) {
         if (items > 6) {
             {
                 if (SWIG_ConvertPtr(ST(6), (void **) &arg7, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                    SWIG_croak("Type error in argument 7 of Client_search_ext. Expected _p_p_LDAPControl");
+                    SWIG_croak("Type error in argument 7 of Client_search. Expected _p_p_LDAPControl");
                 }
             }
         }
         if (items > 7) {
             {
                 if (SWIG_ConvertPtr(ST(7), (void **) &arg8, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                    SWIG_croak("Type error in argument 8 of Client_search_ext. Expected _p_p_LDAPControl");
+                    SWIG_croak("Type error in argument 8 of Client_search. Expected _p_p_LDAPControl");
                 }
             }
         }
         if (items > 8) {
             {
                 if (SWIG_ConvertPtr(ST(8), (void **) &arg9, SWIGTYPE_p_timeval,0) < 0) {
-                    SWIG_croak("Type error in argument 9 of Client_search_ext. Expected _p_timeval");
+                    SWIG_croak("Type error in argument 9 of Client_search. Expected _p_timeval");
                 }
             }
         }
@@ -2455,7 +2607,7 @@ XS(_wrap_Client_search_ext) {
 }
 
 
-XS(_wrap_Client_search_ext_s) {
+XS(_wrap_Client_search_s) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -2477,11 +2629,11 @@ XS(_wrap_Client_search_ext_s) {
         
         temp11=0; arg11=&temp11;
         if ((items < 1) || (items > 10)) {
-            SWIG_croak("Usage: Client_search_ext_s(self,base,scope,filter,PPCHAR,attrsonly,serverctrls,clientctrls,timeout,sizelimit);");
+            SWIG_croak("Usage: Client_search_s(self,base,scope,filter,PPchar,attrsonly,serverctrls,clientctrls,timeout,sizelimit);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
-                SWIG_croak("Type error in argument 1 of Client_search_ext_s. Expected _p_ldap");
+                SWIG_croak("Type error in argument 1 of Client_search_s. Expected _p_ldap");
             }
         }
         if (items > 1) {
@@ -2498,7 +2650,7 @@ XS(_wrap_Client_search_ext_s) {
         if (items > 4) {
             {
                 char *croak;
-                arg5=PERLARRAY2PPCHAR(ST(4), &croak);
+                arg5=PERLARRAY2PPchar(ST(4), &croak);
                 if(croak) SWIG_croak(croak);
             }
         }
@@ -2508,21 +2660,21 @@ XS(_wrap_Client_search_ext_s) {
         if (items > 6) {
             {
                 if (SWIG_ConvertPtr(ST(6), (void **) &arg7, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                    SWIG_croak("Type error in argument 7 of Client_search_ext_s. Expected _p_p_LDAPControl");
+                    SWIG_croak("Type error in argument 7 of Client_search_s. Expected _p_p_LDAPControl");
                 }
             }
         }
         if (items > 7) {
             {
                 if (SWIG_ConvertPtr(ST(7), (void **) &arg8, SWIGTYPE_p_p_LDAPControl,0) < 0) {
-                    SWIG_croak("Type error in argument 8 of Client_search_ext_s. Expected _p_p_LDAPControl");
+                    SWIG_croak("Type error in argument 8 of Client_search_s. Expected _p_p_LDAPControl");
                 }
             }
         }
         if (items > 8) {
             {
                 if (SWIG_ConvertPtr(ST(8), (void **) &arg9, SWIGTYPE_p_timeval,0) < 0) {
-                    SWIG_croak("Type error in argument 9 of Client_search_ext_s. Expected _p_timeval");
+                    SWIG_croak("Type error in argument 9 of Client_search_s. Expected _p_timeval");
                 }
             }
         }
@@ -2559,22 +2711,26 @@ XS(_wrap_Client_parse_result) {
         int *arg3 = (int *) 0 ;
         char **arg4 = (char **) 0 ;
         char **arg5 = (char **) 0 ;
-        VALUE **arg6 = (VALUE **) 0 ;
+        STRING **arg6 = (STRING **) 0 ;
         LDAPControl ***arg7 = (LDAPControl ***) 0 ;
         int arg8 ;
         int result;
         int temp3 ;
-        VALUE *temp6 ;
+        char *temp4 ;
+        char *temp5 ;
+        STRING *temp6 ;
         LDAPControl **temp7 ;
         int argvi = 0;
         dXSARGS;
         
         arg3 = &temp3;
+        temp4=NULL; arg4=&temp4;
+        temp5=NULL; arg5=&temp5;
         temp6=0; arg6=&temp6;
         temp7=0; arg7=&temp7;
         arg8=0;
-        if ((items < 4) || (items > 4)) {
-            SWIG_croak("Usage: Client_parse_result(self,res,OUTPUT,OUTPUT);");
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_parse_result(self,res);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
@@ -2584,16 +2740,6 @@ XS(_wrap_Client_parse_result) {
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
                 SWIG_croak("Type error in argument 2 of Client_parse_result. Expected _p_LDAPMessage");
-            }
-        }
-        {
-            if (SWIG_ConvertPtr(ST(2), (void **) &arg4, SWIGTYPE_p_p_char,0) < 0) {
-                SWIG_croak("Type error in argument 4 of Client_parse_result. Expected _p_p_char");
-            }
-        }
-        {
-            if (SWIG_ConvertPtr(ST(3), (void **) &arg5, SWIGTYPE_p_p_char,0) < 0) {
-                SWIG_croak("Type error in argument 5 of Client_parse_result. Expected _p_p_char");
             }
         }
         result = (int)ldap_parse_result(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
@@ -2609,9 +2755,19 @@ XS(_wrap_Client_parse_result) {
             argvi++;
         }
         {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg4, 0));
+            argvi++;
+        }
+        {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg5, 0));
+            argvi++;
+        }
+        {
             if (argvi >= items) EXTEND(sp, 1);
             ST(argvi) = PPANY2PERLARRAY((void **)(*(arg6)), &PCHAR2PERL,
-            SWIGTYPE_VALUE, 0, &ldap_value_free);
+            SWIGTYPE_STRING, 0, &ldap_value_free);
             argvi++;
         }
         {
@@ -2619,6 +2775,1141 @@ XS(_wrap_Client_parse_result) {
             ST(argvi) = PPANY2PERLARRAY((void **)(*(arg7)), &LDAPControl2PERL_COPY,
             SWIGTYPE_p_LDAPControl, SWIG_SHADOW, &ldap_controls_free);
             argvi++;
+        }
+        {
+            ldap_memfree(arg4); 
+        }
+        {
+            ldap_memfree(arg5); 
+        }
+        XSRETURN(argvi);
+        fail:
+        {
+            ldap_memfree(arg4); 
+        }
+        {
+            ldap_memfree(arg5); 
+        }
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_extended_operation) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        struct berval *arg3 = (struct berval *) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        int *arg6 = (int *) 0 ;
+        int result;
+        int temp6 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg6 = &temp6;
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_extended_operation(self,reqoid,reqdata,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_extended_operation. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_berval,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_extended_operation. Expected _p_berval");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_extended_operation. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_extended_operation. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_extended_operation(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg6));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_extended_operation_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        struct berval *arg3 = (struct berval *) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        char **arg6 = (char **) 0 ;
+        BerValue **arg7 = (BerValue **) 0 ;
+        int result;
+        char *temp6 ;
+        BerValue *temp7 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp6=NULL; arg6=&temp6;
+        temp7=0; arg7=&temp7;
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_extended_operation_s(self,reqoid,reqdata,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_extended_operation_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_berval,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_extended_operation_s. Expected _p_berval");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_extended_operation_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_extended_operation_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_extended_operation_s(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg6, 0));
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            if (*(arg7) && (*(arg7))->bv_val) {
+                ST(argvi) = sv_2mortal(newSVpvn((*(arg7))->bv_val, (*(arg7))->bv_len));
+                ber_bvfree(*(arg7));
+            }
+            else
+            ST(argvi) = &PL_sv_undef;
+            argvi++;
+        }
+        {
+            ldap_memfree(arg6); 
+        }
+        XSRETURN(argvi);
+        fail:
+        {
+            ldap_memfree(arg6); 
+        }
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_parse_extended_result) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPMessage *arg2 = (LDAPMessage *) 0 ;
+        char **arg3 = (char **) 0 ;
+        BerValue **arg4 = (BerValue **) 0 ;
+        int arg5 ;
+        int result;
+        char *temp3 ;
+        BerValue *temp4 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp3=NULL; arg3=&temp3;
+        temp4=0; arg4=&temp4;
+        arg5=0;
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_parse_extended_result(self,res);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_parse_extended_result. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_parse_extended_result. Expected _p_LDAPMessage");
+            }
+        }
+        result = (int)ldap_parse_extended_result(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg3, 0));
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            if (*(arg4) && (*(arg4))->bv_val) {
+                ST(argvi) = sv_2mortal(newSVpvn((*(arg4))->bv_val, (*(arg4))->bv_len));
+                ber_bvfree(*(arg4));
+            }
+            else
+            ST(argvi) = &PL_sv_undef;
+            argvi++;
+        }
+        {
+            ldap_memfree(arg3); 
+        }
+        XSRETURN(argvi);
+        fail:
+        {
+            ldap_memfree(arg3); 
+        }
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_parse_extended_partial) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPMessage *arg2 = (LDAPMessage *) 0 ;
+        char **arg3 = (char **) 0 ;
+        BerValue **arg4 = (BerValue **) 0 ;
+        LDAPControl ***arg5 = (LDAPControl ***) 0 ;
+        int arg6 ;
+        int result;
+        char *temp3 ;
+        BerValue *temp4 ;
+        LDAPControl **temp5 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp3=NULL; arg3=&temp3;
+        temp4=0; arg4=&temp4;
+        temp5=0; arg5=&temp5;
+        arg6=0;
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_parse_extended_partial(self,res);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_parse_extended_partial. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_parse_extended_partial. Expected _p_LDAPMessage");
+            }
+        }
+        result = (int)ldap_parse_extended_partial(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg3, 0));
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            if (*(arg4) && (*(arg4))->bv_val) {
+                ST(argvi) = sv_2mortal(newSVpvn((*(arg4))->bv_val, (*(arg4))->bv_len));
+                ber_bvfree(*(arg4));
+            }
+            else
+            ST(argvi) = &PL_sv_undef;
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = PPANY2PERLARRAY((void **)(*(arg5)), &LDAPControl2PERL_COPY,
+            SWIGTYPE_p_LDAPControl, SWIG_SHADOW, &ldap_controls_free);
+            argvi++;
+        }
+        {
+            ldap_memfree(arg3); 
+        }
+        XSRETURN(argvi);
+        fail:
+        {
+            ldap_memfree(arg3); 
+        }
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_parse_intermediate_resp_result) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPMessage *arg2 = (LDAPMessage *) 0 ;
+        char **arg3 = (char **) 0 ;
+        BerValue **arg4 = (BerValue **) 0 ;
+        int arg5 ;
+        int result;
+        char *temp3 ;
+        BerValue *temp4 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        temp3=NULL; arg3=&temp3;
+        temp4=0; arg4=&temp4;
+        arg5=0;
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_parse_intermediate_resp_result(self,res);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_parse_intermediate_resp_result. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_parse_intermediate_resp_result. Expected _p_LDAPMessage");
+            }
+        }
+        result = (int)ldap_parse_intermediate_resp_result(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if(argvi >= items) EXTEND(sp, 1);
+            ST(argvi) = sv_2mortal(newSVpv(*arg3, 0));
+            argvi++;
+        }
+        {
+            if (argvi >= items) EXTEND(sp, 1);
+            if (*(arg4) && (*(arg4))->bv_val) {
+                ST(argvi) = sv_2mortal(newSVpvn((*(arg4))->bv_val, (*(arg4))->bv_len));
+                ber_bvfree(*(arg4));
+            }
+            else
+            ST(argvi) = &PL_sv_undef;
+            argvi++;
+        }
+        {
+            ldap_memfree(arg3); 
+        }
+        XSRETURN(argvi);
+        fail:
+        {
+            ldap_memfree(arg3); 
+        }
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_abandon) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        int arg2 ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 2) || (items > 4)) {
+            SWIG_croak("Usage: Client_abandon(self,msgid,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_abandon. Expected _p_ldap");
+            }
+        }
+        arg2 = (int) SvIV(ST(1));
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client_abandon. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_abandon. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_abandon_ext(arg1,arg2,arg3,arg4);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_add) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPMod **arg3 = (LDAPMod **) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        int *arg6 = (int *) 0 ;
+        int result;
+        int temp6 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg6 = &temp6;
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_add(self,dn,attrs,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_add. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPMod,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_add. Expected _p_p_LDAPMod");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_add. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_add. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_add_ext(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg6));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_add_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPMod **arg3 = (LDAPMod **) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_add_s(self,dn,attrs,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_add_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPMod,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_add_s. Expected _p_p_LDAPMod");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_add_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_add_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_add_ext_s(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_ldap_cancel) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        int arg2 ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        int *arg5 = (int *) 0 ;
+        int result;
+        int temp5 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg5 = &temp5;
+        if ((items < 2) || (items > 4)) {
+            SWIG_croak("Usage: Client_ldap_cancel(self,cancelid,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_ldap_cancel. Expected _p_ldap");
+            }
+        }
+        arg2 = (int) SvIV(ST(1));
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client_ldap_cancel. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_ldap_cancel. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_ldap_cancel(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg5));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_ldap_cancel_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        int arg2 ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 2) || (items > 4)) {
+            SWIG_croak("Usage: Client_ldap_cancel_s(self,cancelid,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_ldap_cancel_s. Expected _p_ldap");
+            }
+        }
+        arg2 = (int) SvIV(ST(1));
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client_ldap_cancel_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_ldap_cancel_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_ldap_cancel_s(arg1,arg2,arg3,arg4);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_compare) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        char *arg3 = (char *) 0 ;
+        struct berval *arg4 = (struct berval *) 0 ;
+        LDAPControl **arg5 = (LDAPControl **) 0 ;
+        LDAPControl **arg6 = (LDAPControl **) 0 ;
+        int *arg7 = (int *) 0 ;
+        int result;
+        int temp7 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg7 = &temp7;
+        if ((items < 6) || (items > 6)) {
+            SWIG_croak("Usage: Client_compare(self,dn,attr,bvalue,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_compare. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (!SvOK((SV*) ST(2))) arg3 = 0;
+        else arg3 = (char *) SvPV(ST(2), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_berval,0) < 0) {
+                SWIG_croak("Type error in argument 4 of Client_compare. Expected _p_berval");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                SWIG_croak("Type error in argument 5 of Client_compare. Expected _p_p_LDAPControl");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(5), (void **) &arg6, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                SWIG_croak("Type error in argument 6 of Client_compare. Expected _p_p_LDAPControl");
+            }
+        }
+        result = (int)ldap_compare_ext(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg7));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_compare_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        char *arg3 = (char *) 0 ;
+        struct berval *arg4 = (struct berval *) 0 ;
+        LDAPControl **arg5 = (LDAPControl **) 0 ;
+        LDAPControl **arg6 = (LDAPControl **) 0 ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 6) || (items > 6)) {
+            SWIG_croak("Usage: Client_compare_s(self,dn,attr,bvalue,serverctrls,clientctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_compare_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (!SvOK((SV*) ST(2))) arg3 = 0;
+        else arg3 = (char *) SvPV(ST(2), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_berval,0) < 0) {
+                SWIG_croak("Type error in argument 4 of Client_compare_s. Expected _p_berval");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                SWIG_croak("Type error in argument 5 of Client_compare_s. Expected _p_p_LDAPControl");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(5), (void **) &arg6, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                SWIG_croak("Type error in argument 6 of Client_compare_s. Expected _p_p_LDAPControl");
+            }
+        }
+        result = (int)ldap_compare_ext_s(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_delete) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        int *arg5 = (int *) 0 ;
+        int result;
+        int temp5 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg5 = &temp5;
+        if ((items < 2) || (items > 4)) {
+            SWIG_croak("Usage: Client_delete(self,dn,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_delete. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client_delete. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_delete. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_delete_ext(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg5));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_delete_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPControl **arg3 = (LDAPControl **) NULL ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 2) || (items > 4)) {
+            SWIG_croak("Usage: Client_delete_s(self,dn,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_delete_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (items > 2) {
+            {
+                if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 3 of Client_delete_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_delete_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_delete_ext_s(arg1,arg2,arg3,arg4);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_modify) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPMod **arg3 = (LDAPMod **) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        int *arg6 = (int *) 0 ;
+        int result;
+        int temp6 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg6 = &temp6;
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_modify(self,dn,mods,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_modify. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPMod,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_modify. Expected _p_p_LDAPMod");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_modify. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_modify. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_modify_ext(arg1,arg2,arg3,arg4,arg5,arg6);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg6));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_modify_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        LDAPMod **arg3 = (LDAPMod **) 0 ;
+        LDAPControl **arg4 = (LDAPControl **) NULL ;
+        LDAPControl **arg5 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 3) || (items > 5)) {
+            SWIG_croak("Usage: Client_modify_s(self,dn,mods,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_modify_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_p_LDAPMod,0) < 0) {
+                SWIG_croak("Type error in argument 3 of Client_modify_s. Expected _p_p_LDAPMod");
+            }
+        }
+        if (items > 3) {
+            {
+                if (SWIG_ConvertPtr(ST(3), (void **) &arg4, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 4 of Client_modify_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 4) {
+            {
+                if (SWIG_ConvertPtr(ST(4), (void **) &arg5, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 5 of Client_modify_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_modify_ext_s(arg1,arg2,arg3,arg4,arg5);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_rename) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        char *arg3 = (char *) 0 ;
+        char *arg4 = (char *) 0 ;
+        int arg5 ;
+        LDAPControl **arg6 = (LDAPControl **) NULL ;
+        LDAPControl **arg7 = (LDAPControl **) NULL ;
+        int *arg8 = (int *) 0 ;
+        int result;
+        int temp8 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        arg8 = &temp8;
+        if ((items < 5) || (items > 7)) {
+            SWIG_croak("Usage: Client_rename(self,dn,new_rdn,new_superior,delete_old_rdn,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_rename. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (!SvOK((SV*) ST(2))) arg3 = 0;
+        else arg3 = (char *) SvPV(ST(2), PL_na);
+        if (!SvOK((SV*) ST(3))) arg4 = 0;
+        else arg4 = (char *) SvPV(ST(3), PL_na);
+        arg5 = (int) SvIV(ST(4));
+        if (items > 5) {
+            {
+                if (SWIG_ConvertPtr(ST(5), (void **) &arg6, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 6 of Client_rename. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 6) {
+            {
+                if (SWIG_ConvertPtr(ST(6), (void **) &arg7, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 7 of Client_rename. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_rename(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        {
+            if (argvi >= items) {
+                EXTEND(sp,1);
+            }
+            ST(argvi) = sv_newmortal();
+            sv_setiv(ST(argvi),(IV) *(arg8));
+            argvi++;
+        }
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_rename_s) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        char *arg2 = (char *) 0 ;
+        char *arg3 = (char *) 0 ;
+        char *arg4 = (char *) 0 ;
+        int arg5 ;
+        LDAPControl **arg6 = (LDAPControl **) NULL ;
+        LDAPControl **arg7 = (LDAPControl **) NULL ;
+        int result;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 5) || (items > 7)) {
+            SWIG_croak("Usage: Client_rename_s(self,dn,new_rdn,new_superior,delete_old_rdn,sctrls,cctrls);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_rename_s. Expected _p_ldap");
+            }
+        }
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        if (!SvOK((SV*) ST(2))) arg3 = 0;
+        else arg3 = (char *) SvPV(ST(2), PL_na);
+        if (!SvOK((SV*) ST(3))) arg4 = 0;
+        else arg4 = (char *) SvPV(ST(3), PL_na);
+        arg5 = (int) SvIV(ST(4));
+        if (items > 5) {
+            {
+                if (SWIG_ConvertPtr(ST(5), (void **) &arg6, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 6 of Client_rename_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        if (items > 6) {
+            {
+                if (SWIG_ConvertPtr(ST(6), (void **) &arg7, SWIGTYPE_p_p_LDAPControl,0) < 0) {
+                    SWIG_croak("Type error in argument 7 of Client_rename_s. Expected _p_p_LDAPControl");
+                }
+            }
+        }
+        result = (int)ldap_rename_s(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+        
+        ST(argvi) = sv_newmortal();
+        sv_setiv(ST(argvi++), (IV) result);
+        XSRETURN(argvi);
+        fail:
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_Client_get_dn) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        struct ldap *arg1 = (struct ldap *) 0 ;
+        LDAPMessage *arg2 = (LDAPMessage *) 0 ;
+        char *result = (char *) 0;
+        int argvi = 0;
+        dXSARGS;
+        
+        if ((items < 2) || (items > 2)) {
+            SWIG_croak("Usage: Client_get_dn(self,entry);");
+        }
+        {
+            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_ldap,0) < 0) {
+                SWIG_croak("Type error in argument 1 of Client_get_dn. Expected _p_ldap");
+            }
+        }
+        {
+            if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_LDAPMessage,0) < 0) {
+                SWIG_croak("Type error in argument 2 of Client_get_dn. Expected _p_LDAPMessage");
+            }
+        }
+        result = (char *)ldap_get_dn(arg1,arg2);
+        
+        ST(argvi) = sv_newmortal();
+        if (result) {
+            sv_setpv((SV*)ST(argvi++), (char *) result);
+        } else {
+            sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
         XSRETURN(argvi);
         fail:
@@ -5582,7 +6873,7 @@ XS(_wrap_APIInfo_extensions) {
     const char *_swigerr = _swigmsg;
     {
         LDAPAPIInfo *arg1 = (LDAPAPIInfo *) 0 ;
-        INLINEPPCHAR result = (INLINEPPCHAR) 0;
+        PUSHPPchar result = (PUSHPPchar) 0;
         int argvi = 0;
         dXSARGS;
         
@@ -5594,7 +6885,7 @@ XS(_wrap_APIInfo_extensions) {
                 SWIG_croak("Type error in argument 1 of APIInfo_extensions. Expected _p_LDAPAPIInfo");
             }
         }
-        result = (INLINEPPCHAR)LDAPAPIInfo_extensions(arg1);
+        result = (PUSHPPchar)LDAPAPIInfo_extensions(arg1);
         
         
         if (result) {
@@ -6224,25 +7515,63 @@ XS(_wrap_Control_critical) {
 }
 
 
-XS(_wrap_LDAPMod_mod_op_set) {
+XS(_wrap_new_Mod) {
+    char _swigmsg[SWIG_MAX_ERRMSG] = "";
+    const char *_swigerr = _swigmsg;
+    {
+        int arg1 ;
+        char *arg2 = (char *) 0 ;
+        SV *arg3 = (SV *) 0 ;
+        char **arg4 = (char **) 0 ;
+        LDAPMod *result = (LDAPMod *) 0;
+        char *err4 ;
+        int argvi = 0;
+        dXSARGS;
+        
+        err4=NULL; arg4=&err4;
+        if ((items < 3) || (items > 3)) {
+            SWIG_croak("Usage: new_Mod(op,type,array);");
+        }
+        arg1 = (int) SvIV(ST(0));
+        if (!SvOK((SV*) ST(1))) arg2 = 0;
+        else arg2 = (char *) SvPV(ST(1), PL_na);
+        {
+            if (SWIG_ConvertPtr(ST(2), (void **) &arg3, SWIGTYPE_p_SV,0) < 0) {
+                SWIG_croak("Type error in argument 3 of new_Mod. Expected _p_SV");
+            }
+        }
+        result = (LDAPMod *)new_LDAPMod(arg1,arg2,arg3,arg4);
+        
+        ST(argvi) = sv_newmortal();
+        SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_LDAPMod, SWIG_SHADOW|SWIG_OWNER);
+        if (*(arg4)) SWIG_croak(*(arg4));
+        
+        XSRETURN(argvi);
+        fail:
+        
+        (void) _swigerr;
+    }
+    croak(_swigerr);
+}
+
+
+XS(_wrap_delete_Mod) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
         LDAPMod *arg1 = (LDAPMod *) 0 ;
-        int arg2 ;
         int argvi = 0;
         dXSARGS;
         
-        if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPMod_mod_op_set(self,mod_op);");
+        if ((items < 1) || (items > 1)) {
+            SWIG_croak("Usage: delete_Mod(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPMod_mod_op_set. Expected _p_LDAPMod");
+                SWIG_croak("Type error in argument 1 of delete_Mod. Expected _p_LDAPMod");
             }
         }
-        arg2 = (int) SvIV(ST(1));
-        if (arg1) (arg1)->mod_op = arg2;
+        delete_LDAPMod(arg1);
         
         
         XSRETURN(argvi);
@@ -6253,7 +7582,7 @@ XS(_wrap_LDAPMod_mod_op_set) {
 }
 
 
-XS(_wrap_LDAPMod_mod_op_get) {
+XS(_wrap_Mod_op) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6263,14 +7592,14 @@ XS(_wrap_LDAPMod_mod_op_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPMod_mod_op_get(self);");
+            SWIG_croak("Usage: Mod_op(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPMod_mod_op_get. Expected _p_LDAPMod");
+                SWIG_croak("Type error in argument 1 of Mod_op. Expected _p_LDAPMod");
             }
         }
-        result = (int) ((arg1)->mod_op);
+        result = (int)LDAPMod_op(arg1);
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
@@ -6282,44 +7611,7 @@ XS(_wrap_LDAPMod_mod_op_get) {
 }
 
 
-XS(_wrap_LDAPMod_mod_type_set) {
-    char _swigmsg[SWIG_MAX_ERRMSG] = "";
-    const char *_swigerr = _swigmsg;
-    {
-        LDAPMod *arg1 = (LDAPMod *) 0 ;
-        char *arg2 = (char *) 0 ;
-        int argvi = 0;
-        dXSARGS;
-        
-        if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPMod_mod_type_set(self,mod_type);");
-        }
-        {
-            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPMod_mod_type_set. Expected _p_LDAPMod");
-            }
-        }
-        if (!SvOK((SV*) ST(1))) arg2 = 0;
-        else arg2 = (char *) SvPV(ST(1), PL_na);
-        {
-            if (arg1->mod_type) free((char*)arg1->mod_type);
-            if (arg2) {
-                arg1->mod_type = (char *) malloc(strlen(arg2)+1);
-                strcpy((char*)arg1->mod_type,arg2);
-            } else {
-                arg1->mod_type = 0;
-            }
-        }
-        
-        XSRETURN(argvi);
-        fail:
-        (void) _swigerr;
-    }
-    croak(_swigerr);
-}
-
-
-XS(_wrap_LDAPMod_mod_type_get) {
+XS(_wrap_Mod_type) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6329,14 +7621,14 @@ XS(_wrap_LDAPMod_mod_type_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPMod_mod_type_get(self);");
+            SWIG_croak("Usage: Mod_type(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPMod_mod_type_get. Expected _p_LDAPMod");
+                SWIG_croak("Type error in argument 1 of Mod_type. Expected _p_LDAPMod");
             }
         }
-        result = (char *) ((arg1)->mod_type);
+        result = (char *)LDAPMod_type(arg1);
         
         ST(argvi) = sv_newmortal();
         if (result) {
@@ -6352,77 +7644,27 @@ XS(_wrap_LDAPMod_mod_type_get) {
 }
 
 
-XS(_wrap_LDAPMod_mod_vals_get) {
+XS(_wrap_Mod_values) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
         LDAPMod *arg1 = (LDAPMod *) 0 ;
-        LDAPMod_mod_vals *result = (LDAPMod_mod_vals *) 0;
+        BerValue **result = (BerValue **) 0;
         int argvi = 0;
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPMod_mod_vals_get(self);");
+            SWIG_croak("Usage: Mod_values(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPMod_mod_vals_get. Expected _p_LDAPMod");
+                SWIG_croak("Type error in argument 1 of Mod_values. Expected _p_LDAPMod");
             }
         }
-        result = (LDAPMod_mod_vals *)& ((arg1)->mod_vals);
+        result = (BerValue **)LDAPMod_values(arg1);
         
         ST(argvi) = sv_newmortal();
-        SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_LDAPMod_mod_vals, SWIG_SHADOW|0);
-        XSRETURN(argvi);
-        fail:
-        (void) _swigerr;
-    }
-    croak(_swigerr);
-}
-
-
-XS(_wrap_new_LDAPMod) {
-    char _swigmsg[SWIG_MAX_ERRMSG] = "";
-    const char *_swigerr = _swigmsg;
-    {
-        LDAPMod *result = (LDAPMod *) 0;
-        int argvi = 0;
-        dXSARGS;
-        
-        if ((items < 0) || (items > 0)) {
-            SWIG_croak("Usage: new_LDAPMod();");
-        }
-        result = (LDAPMod *)(LDAPMod *) calloc(1, sizeof(LDAPMod));
-        
-        ST(argvi) = sv_newmortal();
-        SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_LDAPMod, SWIG_SHADOW|SWIG_OWNER);
-        XSRETURN(argvi);
-        fail:
-        (void) _swigerr;
-    }
-    croak(_swigerr);
-}
-
-
-XS(_wrap_delete_LDAPMod) {
-    char _swigmsg[SWIG_MAX_ERRMSG] = "";
-    const char *_swigerr = _swigmsg;
-    {
-        LDAPMod *arg1 = (LDAPMod *) 0 ;
-        int argvi = 0;
-        dXSARGS;
-        
-        if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: delete_LDAPMod(self);");
-        }
-        {
-            if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPMod,0) < 0) {
-                SWIG_croak("Type error in argument 1 of delete_LDAPMod. Expected _p_LDAPMod");
-            }
-        }
-        free((char *) arg1);
-        
-        
+        SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_p_BerValue, 0|0);
         XSRETURN(argvi);
         fail:
         (void) _swigerr;
@@ -6605,7 +7847,7 @@ XS(_wrap_delete_LDAPMod_mod_vals) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_next_set) {
+XS(_wrap_URLDesc_lud_next_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6615,16 +7857,16 @@ XS(_wrap_LDAPURLDesc_lud_next_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_next_set(self,lud_next);");
+            SWIG_croak("Usage: URLDesc_lud_next_set(self,lud_next);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_next_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_next_set. Expected _p_LDAPURLDesc");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_ldap_url_desc,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPURLDesc_lud_next_set. Expected _p_ldap_url_desc");
+                SWIG_croak("Type error in argument 2 of URLDesc_lud_next_set. Expected _p_ldap_url_desc");
             }
         }
         if (arg1) (arg1)->lud_next = arg2;
@@ -6638,7 +7880,7 @@ XS(_wrap_LDAPURLDesc_lud_next_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_next_get) {
+XS(_wrap_URLDesc_lud_next_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6648,11 +7890,11 @@ XS(_wrap_LDAPURLDesc_lud_next_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_next_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_next_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_next_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_next_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (struct ldap_url_desc *) ((arg1)->lud_next);
@@ -6667,7 +7909,7 @@ XS(_wrap_LDAPURLDesc_lud_next_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_scheme_set) {
+XS(_wrap_URLDesc_lud_scheme_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6677,11 +7919,11 @@ XS(_wrap_LDAPURLDesc_lud_scheme_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_scheme_set(self,lud_scheme);");
+            SWIG_croak("Usage: URLDesc_lud_scheme_set(self,lud_scheme);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_scheme_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_scheme_set. Expected _p_LDAPURLDesc");
             }
         }
         if (!SvOK((SV*) ST(1))) arg2 = 0;
@@ -6696,15 +7938,17 @@ XS(_wrap_LDAPURLDesc_lud_scheme_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_scheme_get) {
+XS(_wrap_URLDesc_lud_scheme_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6714,11 +7958,11 @@ XS(_wrap_LDAPURLDesc_lud_scheme_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_scheme_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_scheme_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_scheme_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_scheme_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char *) ((arg1)->lud_scheme);
@@ -6737,7 +7981,7 @@ XS(_wrap_LDAPURLDesc_lud_scheme_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_host_set) {
+XS(_wrap_URLDesc_lud_host_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6747,11 +7991,11 @@ XS(_wrap_LDAPURLDesc_lud_host_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_host_set(self,lud_host);");
+            SWIG_croak("Usage: URLDesc_lud_host_set(self,lud_host);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_host_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_host_set. Expected _p_LDAPURLDesc");
             }
         }
         if (!SvOK((SV*) ST(1))) arg2 = 0;
@@ -6766,15 +8010,17 @@ XS(_wrap_LDAPURLDesc_lud_host_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_host_get) {
+XS(_wrap_URLDesc_lud_host_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6784,11 +8030,11 @@ XS(_wrap_LDAPURLDesc_lud_host_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_host_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_host_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_host_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_host_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char *) ((arg1)->lud_host);
@@ -6807,7 +8053,7 @@ XS(_wrap_LDAPURLDesc_lud_host_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_port_set) {
+XS(_wrap_URLDesc_lud_port_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6817,11 +8063,11 @@ XS(_wrap_LDAPURLDesc_lud_port_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_port_set(self,lud_port);");
+            SWIG_croak("Usage: URLDesc_lud_port_set(self,lud_port);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_port_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_port_set. Expected _p_LDAPURLDesc");
             }
         }
         arg2 = (int) SvIV(ST(1));
@@ -6836,7 +8082,7 @@ XS(_wrap_LDAPURLDesc_lud_port_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_port_get) {
+XS(_wrap_URLDesc_lud_port_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6846,11 +8092,11 @@ XS(_wrap_LDAPURLDesc_lud_port_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_port_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_port_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_port_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_port_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (int) ((arg1)->lud_port);
@@ -6865,7 +8111,7 @@ XS(_wrap_LDAPURLDesc_lud_port_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_dn_set) {
+XS(_wrap_URLDesc_lud_dn_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6875,11 +8121,11 @@ XS(_wrap_LDAPURLDesc_lud_dn_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_dn_set(self,lud_dn);");
+            SWIG_croak("Usage: URLDesc_lud_dn_set(self,lud_dn);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_dn_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_dn_set. Expected _p_LDAPURLDesc");
             }
         }
         if (!SvOK((SV*) ST(1))) arg2 = 0;
@@ -6894,15 +8140,17 @@ XS(_wrap_LDAPURLDesc_lud_dn_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_dn_get) {
+XS(_wrap_URLDesc_lud_dn_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6912,11 +8160,11 @@ XS(_wrap_LDAPURLDesc_lud_dn_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_dn_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_dn_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_dn_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_dn_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char *) ((arg1)->lud_dn);
@@ -6935,7 +8183,7 @@ XS(_wrap_LDAPURLDesc_lud_dn_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_attrs_set) {
+XS(_wrap_URLDesc_lud_attrs_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6945,16 +8193,16 @@ XS(_wrap_LDAPURLDesc_lud_attrs_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_attrs_set(self,lud_attrs);");
+            SWIG_croak("Usage: URLDesc_lud_attrs_set(self,lud_attrs);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_attrs_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_attrs_set. Expected _p_LDAPURLDesc");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_p_char,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPURLDesc_lud_attrs_set. Expected _p_p_char");
+                SWIG_croak("Type error in argument 2 of URLDesc_lud_attrs_set. Expected _p_p_char");
             }
         }
         if (arg1) (arg1)->lud_attrs = arg2;
@@ -6968,7 +8216,7 @@ XS(_wrap_LDAPURLDesc_lud_attrs_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_attrs_get) {
+XS(_wrap_URLDesc_lud_attrs_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -6978,11 +8226,11 @@ XS(_wrap_LDAPURLDesc_lud_attrs_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_attrs_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_attrs_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_attrs_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_attrs_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char **) ((arg1)->lud_attrs);
@@ -6997,7 +8245,7 @@ XS(_wrap_LDAPURLDesc_lud_attrs_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_scope_set) {
+XS(_wrap_URLDesc_lud_scope_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7007,11 +8255,11 @@ XS(_wrap_LDAPURLDesc_lud_scope_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_scope_set(self,lud_scope);");
+            SWIG_croak("Usage: URLDesc_lud_scope_set(self,lud_scope);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_scope_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_scope_set. Expected _p_LDAPURLDesc");
             }
         }
         arg2 = (int) SvIV(ST(1));
@@ -7026,7 +8274,7 @@ XS(_wrap_LDAPURLDesc_lud_scope_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_scope_get) {
+XS(_wrap_URLDesc_lud_scope_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7036,11 +8284,11 @@ XS(_wrap_LDAPURLDesc_lud_scope_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_scope_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_scope_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_scope_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_scope_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (int) ((arg1)->lud_scope);
@@ -7055,7 +8303,7 @@ XS(_wrap_LDAPURLDesc_lud_scope_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_filter_set) {
+XS(_wrap_URLDesc_lud_filter_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7065,11 +8313,11 @@ XS(_wrap_LDAPURLDesc_lud_filter_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_filter_set(self,lud_filter);");
+            SWIG_croak("Usage: URLDesc_lud_filter_set(self,lud_filter);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_filter_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_filter_set. Expected _p_LDAPURLDesc");
             }
         }
         if (!SvOK((SV*) ST(1))) arg2 = 0;
@@ -7084,15 +8332,17 @@ XS(_wrap_LDAPURLDesc_lud_filter_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_filter_get) {
+XS(_wrap_URLDesc_lud_filter_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7102,11 +8352,11 @@ XS(_wrap_LDAPURLDesc_lud_filter_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_filter_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_filter_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_filter_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_filter_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char *) ((arg1)->lud_filter);
@@ -7125,7 +8375,7 @@ XS(_wrap_LDAPURLDesc_lud_filter_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_exts_set) {
+XS(_wrap_URLDesc_lud_exts_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7135,16 +8385,16 @@ XS(_wrap_LDAPURLDesc_lud_exts_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_exts_set(self,lud_exts);");
+            SWIG_croak("Usage: URLDesc_lud_exts_set(self,lud_exts);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_exts_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_exts_set. Expected _p_LDAPURLDesc");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_p_char,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPURLDesc_lud_exts_set. Expected _p_p_char");
+                SWIG_croak("Type error in argument 2 of URLDesc_lud_exts_set. Expected _p_p_char");
             }
         }
         if (arg1) (arg1)->lud_exts = arg2;
@@ -7158,7 +8408,7 @@ XS(_wrap_LDAPURLDesc_lud_exts_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_exts_get) {
+XS(_wrap_URLDesc_lud_exts_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7168,11 +8418,11 @@ XS(_wrap_LDAPURLDesc_lud_exts_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_exts_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_exts_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_exts_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_exts_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (char **) ((arg1)->lud_exts);
@@ -7187,7 +8437,7 @@ XS(_wrap_LDAPURLDesc_lud_exts_get) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_crit_exts_set) {
+XS(_wrap_URLDesc_lud_crit_exts_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7197,11 +8447,11 @@ XS(_wrap_LDAPURLDesc_lud_crit_exts_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_crit_exts_set(self,lud_crit_exts);");
+            SWIG_croak("Usage: URLDesc_lud_crit_exts_set(self,lud_crit_exts);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_crit_exts_set. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_crit_exts_set. Expected _p_LDAPURLDesc");
             }
         }
         arg2 = (int) SvIV(ST(1));
@@ -7216,7 +8466,7 @@ XS(_wrap_LDAPURLDesc_lud_crit_exts_set) {
 }
 
 
-XS(_wrap_LDAPURLDesc_lud_crit_exts_get) {
+XS(_wrap_URLDesc_lud_crit_exts_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7226,11 +8476,11 @@ XS(_wrap_LDAPURLDesc_lud_crit_exts_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPURLDesc_lud_crit_exts_get(self);");
+            SWIG_croak("Usage: URLDesc_lud_crit_exts_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPURLDesc_lud_crit_exts_get. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of URLDesc_lud_crit_exts_get. Expected _p_LDAPURLDesc");
             }
         }
         result = (int) ((arg1)->lud_crit_exts);
@@ -7245,7 +8495,7 @@ XS(_wrap_LDAPURLDesc_lud_crit_exts_get) {
 }
 
 
-XS(_wrap_new_LDAPURLDesc) {
+XS(_wrap_new_URLDesc) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7254,7 +8504,7 @@ XS(_wrap_new_LDAPURLDesc) {
         dXSARGS;
         
         if ((items < 0) || (items > 0)) {
-            SWIG_croak("Usage: new_LDAPURLDesc();");
+            SWIG_croak("Usage: new_URLDesc();");
         }
         result = (LDAPURLDesc *)(LDAPURLDesc *) calloc(1, sizeof(LDAPURLDesc));
         
@@ -7268,7 +8518,7 @@ XS(_wrap_new_LDAPURLDesc) {
 }
 
 
-XS(_wrap_delete_LDAPURLDesc) {
+XS(_wrap_delete_URLDesc) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -7277,11 +8527,11 @@ XS(_wrap_delete_LDAPURLDesc) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: delete_LDAPURLDesc(self);");
+            SWIG_croak("Usage: delete_URLDesc(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPURLDesc,0) < 0) {
-                SWIG_croak("Type error in argument 1 of delete_LDAPURLDesc. Expected _p_LDAPURLDesc");
+                SWIG_croak("Type error in argument 1 of delete_URLDesc. Expected _p_LDAPURLDesc");
             }
         }
         free((char *) arg1);
@@ -7360,8 +8610,10 @@ XS(_wrap_ldap_domain2dn) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7392,8 +8644,10 @@ XS(_wrap_ldap_dn2domain) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7424,8 +8678,10 @@ XS(_wrap_ldap_domain2hostlist) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7480,8 +8736,10 @@ XS(_wrap_ldap_extended_operation) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7542,8 +8800,10 @@ XS(_wrap_ldap_extended_operation_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7825,8 +9085,10 @@ XS(_wrap_ldap_add_ext) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7875,8 +9137,10 @@ XS(_wrap_ldap_add_ext_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7913,8 +9177,10 @@ XS(_wrap_ldap_add) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -7951,8 +9217,10 @@ XS(_wrap_ldap_add_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8012,8 +9280,12 @@ XS(_wrap_ldap_sasl_interactive_bind_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8049,8 +9321,12 @@ XS(_wrap_ldap_bind) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8086,8 +9362,12 @@ XS(_wrap_ldap_bind_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8118,8 +9398,10 @@ XS(_wrap_ldap_kerberos_bind_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8150,8 +9432,10 @@ XS(_wrap_ldap_kerberos_bind1) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8182,8 +9466,10 @@ XS(_wrap_ldap_kerberos_bind1_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8214,8 +9500,10 @@ XS(_wrap_ldap_kerberos_bind2) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8246,8 +9534,10 @@ XS(_wrap_ldap_kerberos_bind2_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8397,8 +9687,12 @@ XS(_wrap_ldap_compare_ext) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8450,8 +9744,12 @@ XS(_wrap_ldap_compare_ext_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8488,8 +9786,14 @@ XS(_wrap_ldap_compare) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8526,8 +9830,14 @@ XS(_wrap_ldap_compare_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8576,8 +9886,10 @@ XS(_wrap_ldap_delete_ext) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8620,8 +9932,10 @@ XS(_wrap_ldap_delete_ext_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8652,8 +9966,10 @@ XS(_wrap_ldap_delete) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8684,8 +10000,10 @@ XS(_wrap_ldap_delete_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8780,8 +10098,10 @@ XS(_wrap_ldap_perror) {
         ldap_perror(arg1,(char const *)arg2);
         
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8836,8 +10156,10 @@ XS(_wrap_ldap_modify_ext) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8886,8 +10208,10 @@ XS(_wrap_ldap_modify_ext_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8924,8 +10248,10 @@ XS(_wrap_ldap_modify) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -8962,8 +10288,10 @@ XS(_wrap_ldap_modify_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9020,8 +10348,14 @@ XS(_wrap_ldap_rename) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9072,8 +10406,14 @@ XS(_wrap_ldap_rename_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9112,8 +10452,14 @@ XS(_wrap_ldap_rename2) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9152,8 +10498,14 @@ XS(_wrap_ldap_rename2_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9187,8 +10539,12 @@ XS(_wrap_ldap_modrdn) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9222,8 +10578,12 @@ XS(_wrap_ldap_modrdn_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9259,8 +10619,12 @@ XS(_wrap_ldap_modrdn2) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9296,8 +10660,12 @@ XS(_wrap_ldap_modrdn2_s) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
+        
         XSRETURN(argvi);
         fail:
+        
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9324,8 +10692,10 @@ XS(_wrap_ldap_open) {
         
         ST(argvi) = sv_newmortal();
         SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_LDAP, SWIG_SHADOW|0);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9385,8 +10755,10 @@ XS(_wrap_ldap_initialize) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -9631,7 +11003,7 @@ XS(_wrap_ldap_get_dn) {
 }
 
 
-XS(_wrap_LDAPAVA_la_attr_set) {
+XS(_wrap_AVA_la_attr_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9641,16 +11013,16 @@ XS(_wrap_LDAPAVA_la_attr_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPAVA_la_attr_set(self,la_attr);");
+            SWIG_croak("Usage: AVA_la_attr_set(self,la_attr);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_attr_set. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_attr_set. Expected _p_LDAPAVA");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_berval,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPAVA_la_attr_set. Expected _p_berval");
+                SWIG_croak("Type error in argument 2 of AVA_la_attr_set. Expected _p_berval");
             }
         }
         if (arg1) (arg1)->la_attr = *arg2;
@@ -9664,7 +11036,7 @@ XS(_wrap_LDAPAVA_la_attr_set) {
 }
 
 
-XS(_wrap_LDAPAVA_la_attr_get) {
+XS(_wrap_AVA_la_attr_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9674,11 +11046,11 @@ XS(_wrap_LDAPAVA_la_attr_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPAVA_la_attr_get(self);");
+            SWIG_croak("Usage: AVA_la_attr_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_attr_get. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_attr_get. Expected _p_LDAPAVA");
             }
         }
         result = (struct berval *)& ((arg1)->la_attr);
@@ -9693,7 +11065,7 @@ XS(_wrap_LDAPAVA_la_attr_get) {
 }
 
 
-XS(_wrap_LDAPAVA_la_value_set) {
+XS(_wrap_AVA_la_value_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9703,16 +11075,16 @@ XS(_wrap_LDAPAVA_la_value_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPAVA_la_value_set(self,la_value);");
+            SWIG_croak("Usage: AVA_la_value_set(self,la_value);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_value_set. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_value_set. Expected _p_LDAPAVA");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, SWIGTYPE_p_berval,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPAVA_la_value_set. Expected _p_berval");
+                SWIG_croak("Type error in argument 2 of AVA_la_value_set. Expected _p_berval");
             }
         }
         if (arg1) (arg1)->la_value = *arg2;
@@ -9726,7 +11098,7 @@ XS(_wrap_LDAPAVA_la_value_set) {
 }
 
 
-XS(_wrap_LDAPAVA_la_value_get) {
+XS(_wrap_AVA_la_value_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9736,11 +11108,11 @@ XS(_wrap_LDAPAVA_la_value_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPAVA_la_value_get(self);");
+            SWIG_croak("Usage: AVA_la_value_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_value_get. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_value_get. Expected _p_LDAPAVA");
             }
         }
         result = (struct berval *)& ((arg1)->la_value);
@@ -9755,7 +11127,7 @@ XS(_wrap_LDAPAVA_la_value_get) {
 }
 
 
-XS(_wrap_LDAPAVA_la_flags_set) {
+XS(_wrap_AVA_la_flags_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9765,11 +11137,11 @@ XS(_wrap_LDAPAVA_la_flags_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPAVA_la_flags_set(self,la_flags);");
+            SWIG_croak("Usage: AVA_la_flags_set(self,la_flags);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_flags_set. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_flags_set. Expected _p_LDAPAVA");
             }
         }
         arg2 = (unsigned int) SvUV(ST(1));
@@ -9784,7 +11156,7 @@ XS(_wrap_LDAPAVA_la_flags_set) {
 }
 
 
-XS(_wrap_LDAPAVA_la_flags_get) {
+XS(_wrap_AVA_la_flags_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9794,11 +11166,11 @@ XS(_wrap_LDAPAVA_la_flags_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPAVA_la_flags_get(self);");
+            SWIG_croak("Usage: AVA_la_flags_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_flags_get. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_flags_get. Expected _p_LDAPAVA");
             }
         }
         result = (unsigned int) ((arg1)->la_flags);
@@ -9813,7 +11185,7 @@ XS(_wrap_LDAPAVA_la_flags_get) {
 }
 
 
-XS(_wrap_LDAPAVA_la_private_set) {
+XS(_wrap_AVA_la_private_set) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9823,16 +11195,16 @@ XS(_wrap_LDAPAVA_la_private_set) {
         dXSARGS;
         
         if ((items < 2) || (items > 2)) {
-            SWIG_croak("Usage: LDAPAVA_la_private_set(self,la_private);");
+            SWIG_croak("Usage: AVA_la_private_set(self,la_private);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_private_set. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_private_set. Expected _p_LDAPAVA");
             }
         }
         {
             if (SWIG_ConvertPtr(ST(1), (void **) &arg2, 0,0) < 0) {
-                SWIG_croak("Type error in argument 2 of LDAPAVA_la_private_set. Expected _p_void");
+                SWIG_croak("Type error in argument 2 of AVA_la_private_set. Expected _p_void");
             }
         }
         if (arg1) (arg1)->la_private = arg2;
@@ -9846,7 +11218,7 @@ XS(_wrap_LDAPAVA_la_private_set) {
 }
 
 
-XS(_wrap_LDAPAVA_la_private_get) {
+XS(_wrap_AVA_la_private_get) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9856,11 +11228,11 @@ XS(_wrap_LDAPAVA_la_private_get) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: LDAPAVA_la_private_get(self);");
+            SWIG_croak("Usage: AVA_la_private_get(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of LDAPAVA_la_private_get. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of AVA_la_private_get. Expected _p_LDAPAVA");
             }
         }
         result = (void *) ((arg1)->la_private);
@@ -9875,7 +11247,7 @@ XS(_wrap_LDAPAVA_la_private_get) {
 }
 
 
-XS(_wrap_new_LDAPAVA) {
+XS(_wrap_new_AVA) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9884,7 +11256,7 @@ XS(_wrap_new_LDAPAVA) {
         dXSARGS;
         
         if ((items < 0) || (items > 0)) {
-            SWIG_croak("Usage: new_LDAPAVA();");
+            SWIG_croak("Usage: new_AVA();");
         }
         result = (LDAPAVA *)(LDAPAVA *) calloc(1, sizeof(LDAPAVA));
         
@@ -9898,7 +11270,7 @@ XS(_wrap_new_LDAPAVA) {
 }
 
 
-XS(_wrap_delete_LDAPAVA) {
+XS(_wrap_delete_AVA) {
     char _swigmsg[SWIG_MAX_ERRMSG] = "";
     const char *_swigerr = _swigmsg;
     {
@@ -9907,11 +11279,11 @@ XS(_wrap_delete_LDAPAVA) {
         dXSARGS;
         
         if ((items < 1) || (items > 1)) {
-            SWIG_croak("Usage: delete_LDAPAVA(self);");
+            SWIG_croak("Usage: delete_AVA(self);");
         }
         {
             if (SWIG_ConvertPtr(ST(0), (void **) &arg1, SWIGTYPE_p_LDAPAVA,0) < 0) {
-                SWIG_croak("Type error in argument 1 of delete_LDAPAVA. Expected _p_LDAPAVA");
+                SWIG_croak("Type error in argument 1 of delete_AVA. Expected _p_LDAPAVA");
             }
         }
         free((char *) arg1);
@@ -10069,8 +11441,10 @@ XS(_wrap_ldap_str2dn) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10226,8 +11600,10 @@ XS(_wrap_ldap_str2rdn) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10336,8 +11712,10 @@ XS(_wrap_ldap_dn_normalize) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10366,8 +11744,10 @@ XS(_wrap_ldap_dn2ufn) {
         } else {
             sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10394,8 +11774,10 @@ XS(_wrap_ldap_explode_dn) {
         
         ST(argvi) = sv_newmortal();
         SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_p_char, 0|0);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10422,8 +11804,10 @@ XS(_wrap_ldap_explode_rdn) {
         
         ST(argvi) = sv_newmortal();
         SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_p_char, 0|0);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10495,8 +11879,10 @@ XS(_wrap_ldap_dn2dcedn) {
         } else {
             sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10525,8 +11911,10 @@ XS(_wrap_ldap_dcedn2dn) {
         } else {
             sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10555,8 +11943,10 @@ XS(_wrap_ldap_dn2ad_canonical) {
         } else {
             sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10783,8 +12173,10 @@ XS(_wrap_ldap_get_values_len) {
         
         ST(argvi) = sv_newmortal();
         SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_p_berval, 0|0);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -10877,8 +12269,10 @@ XS(_wrap_ldap_get_values) {
         
         ST(argvi) = sv_newmortal();
         SWIG_MakePtr(ST(argvi++), (void *) result, SWIGTYPE_p_p_char, 0|0);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11223,8 +12617,10 @@ XS(_wrap_ldap_put_vrFilter) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11414,8 +12810,10 @@ XS(_wrap_ldap_strdup) {
         } else {
             sv_setsv((SV*)ST(argvi++), &PL_sv_undef);
         }
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11487,8 +12885,10 @@ XS(_wrap_ldap_sort_entries) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11589,8 +12989,10 @@ XS(_wrap_ldap_is_ldap_url) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11615,8 +13017,10 @@ XS(_wrap_ldap_is_ldaps_url) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11641,8 +13045,10 @@ XS(_wrap_ldap_is_ldapi_url) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11673,8 +13079,10 @@ XS(_wrap_ldap_url_parse) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11770,8 +13178,10 @@ XS(_wrap_LDAPSortKey_attributeType_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -11840,8 +13250,10 @@ XS(_wrap_LDAPSortKey_orderingRule_set) {
             }
         }
         
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -12013,8 +13425,10 @@ XS(_wrap_ldap_create_sort_keylist) {
         
         ST(argvi) = sv_newmortal();
         sv_setiv(ST(argvi++), (IV) result);
+        
         XSRETURN(argvi);
         fail:
+        
         (void) _swigerr;
     }
     croak(_swigerr);
@@ -13076,15 +14490,17 @@ XS(_wrap_ldap_passwd_s) {
 static swig_type_info _swigt__p_ber_slen_t[] = {{"_p_ber_slen_t", 0, "ber_slen_t *", 0},{"_p_ber_slen_t"},{0}};
 static swig_type_info _swigt__p_ldap[] = {{"OnLDAP::Base::Client", 0, "ldap *", 0},{"OnLDAP::Base::Client"},{"_p_LDAP"},{0}};
 static swig_type_info _swigt__p_LDAPDN_rewrite_func[] = {{"_p_LDAPDN_rewrite_func", 0, "LDAPDN_rewrite_func *", 0},{"_p_LDAPDN_rewrite_func"},{0}};
-static swig_type_info _swigt__p_ldap_url_desc[] = {{"_p_ldap_url_desc", 0, "struct ldap_url_desc *", 0},{"OnLDAP::Base::LDAPURLDesc"},{"_p_ldap_url_desc"},{0}};
+static swig_type_info _swigt__p_ldap_url_desc[] = {{"_p_ldap_url_desc", 0, "struct ldap_url_desc *", 0},{"OnLDAP::Base::URLDesc"},{"_p_ldap_url_desc"},{0}};
 static swig_type_info _swigt__p_Sockbuf[] = {{"_p_Sockbuf", 0, "Sockbuf *", 0},{"_p_Sockbuf"},{0}};
-static swig_type_info _swigt__p_LDAPMessage[] = {{"_p_LDAPMessage", 0, "LDAPMessage *", 0},{"OnLDAP::Base::Message"},{"_p_LDAPMessage"},{0}};
 static swig_type_info _swigt__p_p_LDAPMessage[] = {{"_p_p_LDAPMessage", 0, "LDAPMessage **", 0},{"_p_p_LDAPMessage"},{0}};
+static swig_type_info _swigt__p_LDAPMessage[] = {{"_p_LDAPMessage", 0, "LDAPMessage *", 0},{"OnLDAP::Base::Message"},{"_p_LDAPMessage"},{0}};
 static swig_type_info _swigt__p_LDAP_SASL_INTERACT_PROC[] = {{"_p_LDAP_SASL_INTERACT_PROC", 0, "LDAP_SASL_INTERACT_PROC *", 0},{"_p_LDAP_SASL_INTERACT_PROC"},{0}};
 static swig_type_info _swigt__p_LDAPVLVInfo[] = {{"OnLDAP::Base::LDAPVLVInfo", 0, "LDAPVLVInfo *", 0},{"OnLDAP::Base::LDAPVLVInfo"},{0}};
+static swig_type_info _swigt__STRING[] = {{"_STRING", 0, "STRING", 0},{"_STRING"},{0}};
+static swig_type_info _swigt__p_p_STRING[] = {{"_p_p_STRING", 0, "STRING **", 0},{"_p_p_p_char"},{"_p_p_STRING"},{0}};
 static swig_type_info _swigt__p_p_char[] = {{"_p_p_char", 0, "char **", 0},{"_p_p_char"},{0}};
 static swig_type_info _swigt__p_LDAP_REBIND_PROC[] = {{"_p_LDAP_REBIND_PROC", 0, "LDAP_REBIND_PROC *", 0},{"_p_LDAP_REBIND_PROC"},{0}};
-static swig_type_info _swigt__p_p_p_char[] = {{"_p_p_p_char", 0, "char ***", 0},{"_p_p_p_char"},{"_p_p_VALUE"},{0}};
+static swig_type_info _swigt__p_p_p_char[] = {{"_p_p_p_char", 0, "char ***", 0},{"_p_p_p_char"},{"_p_p_STRING"},{0}};
 static swig_type_info _swigt__p_LDAPRDN[] = {{"_p_LDAPRDN", 0, "LDAPRDN *", 0},{"_p_LDAPRDN"},{0}};
 static swig_type_info _swigt__p_p_LDAPRDN[] = {{"_p_p_LDAPRDN", 0, "LDAPRDN **", 0},{"_p_p_LDAPRDN"},{0}};
 static swig_type_info _swigt__p_LDAPSortKey[] = {{"OnLDAP::Base::LDAPSortKey", 0, "LDAPSortKey *", 0},{"OnLDAP::Base::LDAPSortKey"},{0}};
@@ -13101,18 +14517,18 @@ static swig_type_info _swigt__p_LDAPMod_mod_vals[] = {{"OnLDAP::Base::LDAPMod_mo
 static swig_type_info _swigt__p_ber_tag_t[] = {{"_p_ber_tag_t", 0, "ber_tag_t *", 0},{"_p_ber_tag_t"},{0}};
 static swig_type_info _swigt__p_BerVarray[] = {{"_p_BerVarray", 0, "BerVarray *", 0},{"_p_p_berval"},{"_p_BerVarray"},{"_p_p_BerValue"},{0}};
 static swig_type_info _swigt__p_ber_int_t[] = {{"_p_ber_int_t", 0, "ber_int_t *", 0},{"_p_ber_int_t"},{0}};
-static swig_type_info _swigt__p_LDAPURLDesc[] = {{"OnLDAP::Base::LDAPURLDesc", 0, "LDAPURLDesc *", 0},{"OnLDAP::Base::LDAPURLDesc"},{"_p_ldap_url_desc"},{0}};
+static swig_type_info _swigt__p_LDAPURLDesc[] = {{"OnLDAP::Base::URLDesc", 0, "LDAPURLDesc *", 0},{"OnLDAP::Base::URLDesc"},{"_p_ldap_url_desc"},{0}};
 static swig_type_info _swigt__p_p_LDAPURLDesc[] = {{"_p_p_LDAPURLDesc", 0, "LDAPURLDesc **", 0},{"_p_p_LDAPURLDesc"},{0}};
 static swig_type_info _swigt__p_ber_len_t[] = {{"_p_ber_len_t", 0, "ber_len_t *", 0},{"_p_ber_len_t"},{0}};
 static swig_type_info _swigt__p_ldapmsg[] = {{"OnLDAP::Base::Message", 0, "ldapmsg *", 0},{"OnLDAP::Base::Message"},{"_p_LDAPMessage"},{0}};
 static swig_type_info _swigt__p_p_berval[] = {{"_p_p_berval", 0, "struct berval **", 0},{"_p_p_berval"},{"_p_p_BerValue"},{"_p_BerVarray"},{0}};
 static swig_type_info _swigt__p_berval[] = {{"_p_berval", 0, "struct berval *", 0},{"_p_berval"},{"OnLDAP::Base::BerValue"},{0}};
+static swig_type_info _swigt__p_LDAPMod[] = {{"OnLDAP::Base::Mod", 0, "LDAPMod *", 0},{"OnLDAP::Base::Mod"},{0}};
 static swig_type_info _swigt__p_p_LDAPMod[] = {{"_p_p_LDAPMod", 0, "LDAPMod **", 0},{"_p_p_LDAPMod"},{0}};
-static swig_type_info _swigt__p_LDAPMod[] = {{"OnLDAP::Base::LDAPMod", 0, "LDAPMod *", 0},{"OnLDAP::Base::LDAPMod"},{0}};
-static swig_type_info _swigt__p_p_VALUE[] = {{"_p_p_VALUE", 0, "VALUE **", 0},{"_p_p_VALUE"},{"_p_p_p_char"},{0}};
-static swig_type_info _swigt__VALUE[] = {{"_VALUE", 0, "VALUE", 0},{"_VALUE"},{0}};
+static swig_type_info _swigt__BerValue[] = {{"_BerValue", 0, "BerValue", 0},{"_BerValue"},{0}};
 static swig_type_info _swigt__p_BerValue[] = {{"OnLDAP::Base::BerValue", 0, "BerValue *", 0},{"_p_berval"},{"OnLDAP::Base::BerValue"},{0}};
 static swig_type_info _swigt__p_p_BerValue[] = {{"_p_p_BerValue", 0, "BerValue **", 0},{"_p_p_berval"},{"_p_p_BerValue"},{"_p_BerVarray"},{0}};
+static swig_type_info _swigt__p_SV[] = {{"_p_SV", 0, "SV *", 0},{"_p_SV"},{0}};
 static swig_type_info _swigt__p_timeval[] = {{"_p_timeval", 0, "struct timeval *", 0},{"_p_timeval"},{0}};
 static swig_type_info _swigt__p_LDAPAPIFeatureInfo[] = {{"OnLDAP::Base::APIFeatureInfo", 0, "LDAPAPIFeatureInfo *", 0},{"OnLDAP::Base::APIFeatureInfo"},{0}};
 static swig_type_info _swigt__p_LDAPDN[] = {{"_p_LDAPDN", 0, "LDAPDN *", 0},{"_p_LDAPDN"},{0}};
@@ -13120,7 +14536,7 @@ static swig_type_info _swigt__p_p_LDAPDN[] = {{"_p_p_LDAPDN", 0, "LDAPDN **", 0}
 static swig_type_info _swigt__p_BerElement[] = {{"_p_BerElement", 0, "BerElement *", 0},{"_p_BerElement"},{0}};
 static swig_type_info _swigt__p_p_BerElement[] = {{"_p_p_BerElement", 0, "BerElement **", 0},{"_p_p_BerElement"},{0}};
 static swig_type_info _swigt__p_int[] = {{"_p_int", 0, "int *", 0},{"_p_int"},{0}};
-static swig_type_info _swigt__p_LDAPAVA[] = {{"OnLDAP::Base::LDAPAVA", 0, "LDAPAVA *", 0},{"OnLDAP::Base::LDAPAVA"},{0}};
+static swig_type_info _swigt__p_LDAPAVA[] = {{"OnLDAP::Base::AVA", 0, "LDAPAVA *", 0},{"OnLDAP::Base::AVA"},{0}};
 static swig_type_info _swigt__p_LDAP[] = {{"_p_LDAP", 0, "LDAP *", 0},{"OnLDAP::Base::Client"},{"_p_LDAP"},{0}};
 static swig_type_info _swigt__p_p_LDAP[] = {{"_p_p_LDAP", 0, "LDAP **", 0},{"_p_p_LDAP"},{0}};
 static swig_type_info _swigt__p_LDAP_SORT_AD_CMP_PROC[] = {{"_p_LDAP_SORT_AD_CMP_PROC", 0, "LDAP_SORT_AD_CMP_PROC *", 0},{"_p_LDAP_SORT_AD_CMP_PROC"},{0}};
@@ -13134,10 +14550,12 @@ _swigt__p_ldap,
 _swigt__p_LDAPDN_rewrite_func, 
 _swigt__p_ldap_url_desc, 
 _swigt__p_Sockbuf, 
-_swigt__p_LDAPMessage, 
 _swigt__p_p_LDAPMessage, 
+_swigt__p_LDAPMessage, 
 _swigt__p_LDAP_SASL_INTERACT_PROC, 
 _swigt__p_LDAPVLVInfo, 
+_swigt__STRING, 
+_swigt__p_p_STRING, 
 _swigt__p_p_char, 
 _swigt__p_LDAP_REBIND_PROC, 
 _swigt__p_p_p_char, 
@@ -13163,12 +14581,12 @@ _swigt__p_ber_len_t,
 _swigt__p_ldapmsg, 
 _swigt__p_p_berval, 
 _swigt__p_berval, 
-_swigt__p_p_LDAPMod, 
 _swigt__p_LDAPMod, 
-_swigt__p_p_VALUE, 
-_swigt__VALUE, 
+_swigt__p_p_LDAPMod, 
+_swigt__BerValue, 
 _swigt__p_BerValue, 
 _swigt__p_p_BerValue, 
+_swigt__p_SV, 
 _swigt__p_timeval, 
 _swigt__p_LDAPAPIFeatureInfo, 
 _swigt__p_LDAPDN, 
@@ -13438,8 +14856,6 @@ static swig_command_info swig_commands[] = {
 {"OnLDAP::Basec::new_Client", _wrap_new_Client},
 {"OnLDAP::Basec::delete_Client", _wrap_delete_Client},
 {"OnLDAP::Basec::Client__unbind", _wrap_Client__unbind},
-{"OnLDAP::Basec::Client__unbind_s", _wrap_Client__unbind_s},
-{"OnLDAP::Basec::Client__unbind_ext", _wrap_Client__unbind_ext},
 {"OnLDAP::Basec::Client__get_option__bool", _wrap_Client__get_option__bool},
 {"OnLDAP::Basec::Client__get_option__int", _wrap_Client__get_option__int},
 {"OnLDAP::Basec::Client__get_option__string", _wrap_Client__get_option__string},
@@ -13456,13 +14872,34 @@ static swig_command_info swig_commands[] = {
 {"OnLDAP::Basec::Client_first_reference", _wrap_Client_first_reference},
 {"OnLDAP::Basec::Client_next_reference", _wrap_Client_next_reference},
 {"OnLDAP::Basec::Client_count_references", _wrap_Client_count_references},
+{"OnLDAP::Basec::Client_ldap_parse_reference", _wrap_Client_ldap_parse_reference},
 {"OnLDAP::Basec::Client_first_entry", _wrap_Client_first_entry},
 {"OnLDAP::Basec::Client_next_entry", _wrap_Client_next_entry},
 {"OnLDAP::Basec::Client_count_entries", _wrap_Client_count_entries},
+{"OnLDAP::Basec::Client_get_entry_controls", _wrap_Client_get_entry_controls},
 {"OnLDAP::Basec::Client_result", _wrap_Client_result},
-{"OnLDAP::Basec::Client_search_ext", _wrap_Client_search_ext},
-{"OnLDAP::Basec::Client_search_ext_s", _wrap_Client_search_ext_s},
+{"OnLDAP::Basec::Client_search", _wrap_Client_search},
+{"OnLDAP::Basec::Client_search_s", _wrap_Client_search_s},
 {"OnLDAP::Basec::Client_parse_result", _wrap_Client_parse_result},
+{"OnLDAP::Basec::Client_extended_operation", _wrap_Client_extended_operation},
+{"OnLDAP::Basec::Client_extended_operation_s", _wrap_Client_extended_operation_s},
+{"OnLDAP::Basec::Client_parse_extended_result", _wrap_Client_parse_extended_result},
+{"OnLDAP::Basec::Client_parse_extended_partial", _wrap_Client_parse_extended_partial},
+{"OnLDAP::Basec::Client_parse_intermediate_resp_result", _wrap_Client_parse_intermediate_resp_result},
+{"OnLDAP::Basec::Client_abandon", _wrap_Client_abandon},
+{"OnLDAP::Basec::Client_add", _wrap_Client_add},
+{"OnLDAP::Basec::Client_add_s", _wrap_Client_add_s},
+{"OnLDAP::Basec::Client_ldap_cancel", _wrap_Client_ldap_cancel},
+{"OnLDAP::Basec::Client_ldap_cancel_s", _wrap_Client_ldap_cancel_s},
+{"OnLDAP::Basec::Client_compare", _wrap_Client_compare},
+{"OnLDAP::Basec::Client_compare_s", _wrap_Client_compare_s},
+{"OnLDAP::Basec::Client_delete", _wrap_Client_delete},
+{"OnLDAP::Basec::Client_delete_s", _wrap_Client_delete_s},
+{"OnLDAP::Basec::Client_modify", _wrap_Client_modify},
+{"OnLDAP::Basec::Client_modify_s", _wrap_Client_modify_s},
+{"OnLDAP::Basec::Client_rename", _wrap_Client_rename},
+{"OnLDAP::Basec::Client_rename_s", _wrap_Client_rename_s},
+{"OnLDAP::Basec::Client_get_dn", _wrap_Client_get_dn},
 {"OnLDAP::Basec::new_Message", _wrap_new_Message},
 {"OnLDAP::Basec::delete_Message", _wrap_delete_Message},
 {"OnLDAP::Basec::Message_type", _wrap_Message_type},
@@ -13568,41 +15005,39 @@ static swig_command_info swig_commands[] = {
 {"OnLDAP::Basec::Control_oid", _wrap_Control_oid},
 {"OnLDAP::Basec::Control_value", _wrap_Control_value},
 {"OnLDAP::Basec::Control_critical", _wrap_Control_critical},
-{"OnLDAP::Basec::LDAPMod_mod_op_set", _wrap_LDAPMod_mod_op_set},
-{"OnLDAP::Basec::LDAPMod_mod_op_get", _wrap_LDAPMod_mod_op_get},
-{"OnLDAP::Basec::LDAPMod_mod_type_set", _wrap_LDAPMod_mod_type_set},
-{"OnLDAP::Basec::LDAPMod_mod_type_get", _wrap_LDAPMod_mod_type_get},
-{"OnLDAP::Basec::LDAPMod_mod_vals_get", _wrap_LDAPMod_mod_vals_get},
-{"OnLDAP::Basec::new_LDAPMod", _wrap_new_LDAPMod},
-{"OnLDAP::Basec::delete_LDAPMod", _wrap_delete_LDAPMod},
+{"OnLDAP::Basec::new_Mod", _wrap_new_Mod},
+{"OnLDAP::Basec::delete_Mod", _wrap_delete_Mod},
+{"OnLDAP::Basec::Mod_op", _wrap_Mod_op},
+{"OnLDAP::Basec::Mod_type", _wrap_Mod_type},
+{"OnLDAP::Basec::Mod_values", _wrap_Mod_values},
 {"OnLDAP::Basec::LDAPMod_mod_vals_modv_strvals_set", _wrap_LDAPMod_mod_vals_modv_strvals_set},
 {"OnLDAP::Basec::LDAPMod_mod_vals_modv_strvals_get", _wrap_LDAPMod_mod_vals_modv_strvals_get},
 {"OnLDAP::Basec::LDAPMod_mod_vals_modv_bvals_set", _wrap_LDAPMod_mod_vals_modv_bvals_set},
 {"OnLDAP::Basec::LDAPMod_mod_vals_modv_bvals_get", _wrap_LDAPMod_mod_vals_modv_bvals_get},
 {"OnLDAP::Basec::new_LDAPMod_mod_vals", _wrap_new_LDAPMod_mod_vals},
 {"OnLDAP::Basec::delete_LDAPMod_mod_vals", _wrap_delete_LDAPMod_mod_vals},
-{"OnLDAP::Basec::LDAPURLDesc_lud_next_set", _wrap_LDAPURLDesc_lud_next_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_next_get", _wrap_LDAPURLDesc_lud_next_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_scheme_set", _wrap_LDAPURLDesc_lud_scheme_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_scheme_get", _wrap_LDAPURLDesc_lud_scheme_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_host_set", _wrap_LDAPURLDesc_lud_host_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_host_get", _wrap_LDAPURLDesc_lud_host_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_port_set", _wrap_LDAPURLDesc_lud_port_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_port_get", _wrap_LDAPURLDesc_lud_port_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_dn_set", _wrap_LDAPURLDesc_lud_dn_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_dn_get", _wrap_LDAPURLDesc_lud_dn_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_attrs_set", _wrap_LDAPURLDesc_lud_attrs_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_attrs_get", _wrap_LDAPURLDesc_lud_attrs_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_scope_set", _wrap_LDAPURLDesc_lud_scope_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_scope_get", _wrap_LDAPURLDesc_lud_scope_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_filter_set", _wrap_LDAPURLDesc_lud_filter_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_filter_get", _wrap_LDAPURLDesc_lud_filter_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_exts_set", _wrap_LDAPURLDesc_lud_exts_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_exts_get", _wrap_LDAPURLDesc_lud_exts_get},
-{"OnLDAP::Basec::LDAPURLDesc_lud_crit_exts_set", _wrap_LDAPURLDesc_lud_crit_exts_set},
-{"OnLDAP::Basec::LDAPURLDesc_lud_crit_exts_get", _wrap_LDAPURLDesc_lud_crit_exts_get},
-{"OnLDAP::Basec::new_LDAPURLDesc", _wrap_new_LDAPURLDesc},
-{"OnLDAP::Basec::delete_LDAPURLDesc", _wrap_delete_LDAPURLDesc},
+{"OnLDAP::Basec::URLDesc_lud_next_set", _wrap_URLDesc_lud_next_set},
+{"OnLDAP::Basec::URLDesc_lud_next_get", _wrap_URLDesc_lud_next_get},
+{"OnLDAP::Basec::URLDesc_lud_scheme_set", _wrap_URLDesc_lud_scheme_set},
+{"OnLDAP::Basec::URLDesc_lud_scheme_get", _wrap_URLDesc_lud_scheme_get},
+{"OnLDAP::Basec::URLDesc_lud_host_set", _wrap_URLDesc_lud_host_set},
+{"OnLDAP::Basec::URLDesc_lud_host_get", _wrap_URLDesc_lud_host_get},
+{"OnLDAP::Basec::URLDesc_lud_port_set", _wrap_URLDesc_lud_port_set},
+{"OnLDAP::Basec::URLDesc_lud_port_get", _wrap_URLDesc_lud_port_get},
+{"OnLDAP::Basec::URLDesc_lud_dn_set", _wrap_URLDesc_lud_dn_set},
+{"OnLDAP::Basec::URLDesc_lud_dn_get", _wrap_URLDesc_lud_dn_get},
+{"OnLDAP::Basec::URLDesc_lud_attrs_set", _wrap_URLDesc_lud_attrs_set},
+{"OnLDAP::Basec::URLDesc_lud_attrs_get", _wrap_URLDesc_lud_attrs_get},
+{"OnLDAP::Basec::URLDesc_lud_scope_set", _wrap_URLDesc_lud_scope_set},
+{"OnLDAP::Basec::URLDesc_lud_scope_get", _wrap_URLDesc_lud_scope_get},
+{"OnLDAP::Basec::URLDesc_lud_filter_set", _wrap_URLDesc_lud_filter_set},
+{"OnLDAP::Basec::URLDesc_lud_filter_get", _wrap_URLDesc_lud_filter_get},
+{"OnLDAP::Basec::URLDesc_lud_exts_set", _wrap_URLDesc_lud_exts_set},
+{"OnLDAP::Basec::URLDesc_lud_exts_get", _wrap_URLDesc_lud_exts_get},
+{"OnLDAP::Basec::URLDesc_lud_crit_exts_set", _wrap_URLDesc_lud_crit_exts_set},
+{"OnLDAP::Basec::URLDesc_lud_crit_exts_get", _wrap_URLDesc_lud_crit_exts_get},
+{"OnLDAP::Basec::new_URLDesc", _wrap_new_URLDesc},
+{"OnLDAP::Basec::delete_URLDesc", _wrap_delete_URLDesc},
 {"OnLDAP::Basec::ldap_set_rebind_proc", _wrap_ldap_set_rebind_proc},
 {"OnLDAP::Basec::ldap_domain2dn", _wrap_ldap_domain2dn},
 {"OnLDAP::Basec::ldap_dn2domain", _wrap_ldap_dn2domain},
@@ -13660,16 +15095,16 @@ static swig_command_info swig_commands[] = {
 {"OnLDAP::Basec::ldap_delete_result_entry", _wrap_ldap_delete_result_entry},
 {"OnLDAP::Basec::ldap_add_result_entry", _wrap_ldap_add_result_entry},
 {"OnLDAP::Basec::ldap_get_dn", _wrap_ldap_get_dn},
-{"OnLDAP::Basec::LDAPAVA_la_attr_set", _wrap_LDAPAVA_la_attr_set},
-{"OnLDAP::Basec::LDAPAVA_la_attr_get", _wrap_LDAPAVA_la_attr_get},
-{"OnLDAP::Basec::LDAPAVA_la_value_set", _wrap_LDAPAVA_la_value_set},
-{"OnLDAP::Basec::LDAPAVA_la_value_get", _wrap_LDAPAVA_la_value_get},
-{"OnLDAP::Basec::LDAPAVA_la_flags_set", _wrap_LDAPAVA_la_flags_set},
-{"OnLDAP::Basec::LDAPAVA_la_flags_get", _wrap_LDAPAVA_la_flags_get},
-{"OnLDAP::Basec::LDAPAVA_la_private_set", _wrap_LDAPAVA_la_private_set},
-{"OnLDAP::Basec::LDAPAVA_la_private_get", _wrap_LDAPAVA_la_private_get},
-{"OnLDAP::Basec::new_LDAPAVA", _wrap_new_LDAPAVA},
-{"OnLDAP::Basec::delete_LDAPAVA", _wrap_delete_LDAPAVA},
+{"OnLDAP::Basec::AVA_la_attr_set", _wrap_AVA_la_attr_set},
+{"OnLDAP::Basec::AVA_la_attr_get", _wrap_AVA_la_attr_get},
+{"OnLDAP::Basec::AVA_la_value_set", _wrap_AVA_la_value_set},
+{"OnLDAP::Basec::AVA_la_value_get", _wrap_AVA_la_value_get},
+{"OnLDAP::Basec::AVA_la_flags_set", _wrap_AVA_la_flags_set},
+{"OnLDAP::Basec::AVA_la_flags_get", _wrap_AVA_la_flags_get},
+{"OnLDAP::Basec::AVA_la_private_set", _wrap_AVA_la_private_set},
+{"OnLDAP::Basec::AVA_la_private_get", _wrap_AVA_la_private_get},
+{"OnLDAP::Basec::new_AVA", _wrap_new_AVA},
+{"OnLDAP::Basec::delete_AVA", _wrap_delete_AVA},
 {"OnLDAP::Basec::ldap_avafree", _wrap_ldap_avafree},
 {"OnLDAP::Basec::ldap_rdnfree", _wrap_ldap_rdnfree},
 {"OnLDAP::Basec::ldap_dnfree", _wrap_ldap_dnfree},
@@ -13829,10 +15264,10 @@ XS(SWIG_init) {
     SWIG_TypeClientData(SWIGTYPE_p_LDAPAPIInfo, (void*) "OnLDAP::Base::APIInfo");
     SWIG_TypeClientData(SWIGTYPE_p_LDAPAPIFeatureInfo, (void*) "OnLDAP::Base::APIFeatureInfo");
     SWIG_TypeClientData(SWIGTYPE_p_LDAPControl, (void*) "OnLDAP::Base::Control");
-    SWIG_TypeClientData(SWIGTYPE_p_LDAPMod, (void*) "OnLDAP::Base::LDAPMod");
+    SWIG_TypeClientData(SWIGTYPE_p_LDAPMod, (void*) "OnLDAP::Base::Mod");
     SWIG_TypeClientData(SWIGTYPE_p_LDAPMod_mod_vals, (void*) "OnLDAP::Base::LDAPMod_mod_vals");
-    SWIG_TypeClientData(SWIGTYPE_p_LDAPURLDesc, (void*) "OnLDAP::Base::LDAPURLDesc");
-    SWIG_TypeClientData(SWIGTYPE_p_LDAPAVA, (void*) "OnLDAP::Base::LDAPAVA");
+    SWIG_TypeClientData(SWIGTYPE_p_LDAPURLDesc, (void*) "OnLDAP::Base::URLDesc");
+    SWIG_TypeClientData(SWIGTYPE_p_LDAPAVA, (void*) "OnLDAP::Base::AVA");
     SWIG_TypeClientData(SWIGTYPE_p_LDAPSortKey, (void*) "OnLDAP::Base::LDAPSortKey");
     SWIG_TypeClientData(SWIGTYPE_p_LDAPVLVInfo, (void*) "OnLDAP::Base::LDAPVLVInfo");
     ST(0) = &PL_sv_yes;

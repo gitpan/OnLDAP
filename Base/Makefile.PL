@@ -7,7 +7,9 @@ WriteMakefile( NAME => 'OnLDAP::Base',
 
 sub MY::postamble {
     return <<"MAKE_FRAG"
-ldap_wrap.c: ldap.i
+ldap_wrap.c: ldap.i croak.i ignore.i \\
+             bervaluetmap.i controltmap.i \\
+             msgtmap.i modtmap.i mytmaps.i
 \tswig -perl -proxy -const -I/usr/include -module OnLDAP::Base \$<
 
 Base.pm: ldap_wrap\$(OBJ_EXT)
