@@ -1,0 +1,9 @@
+Revision history for Perl extension OnLDAP.
+
+0.10  Nov 3 2003
+	- module renamed from OpenLDAP to OnLDAP
+
+0.01  Sat Oct 18 12:47:35 2003
+	- original version; created by h2xs 1.22 with options
+		-AX -O -n OpenLDAP
+
